@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Content:
+  = @schedule.content
+%p
+  %b Plan type:
+  = @schedule.plan_type
+%p
+  %b Termination time:
+  = @schedule.termination_time
+
+= link_to 'Edit', edit_schedule_path(@schedule)
+\|
+= link_to 'Back', schedules_path

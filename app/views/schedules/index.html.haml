@@ -1,0 +1,25 @@
+%h1 Listing schedules
+
+%table
+  %thead
+    %tr
+      %th Content
+      %th Plan type
+      %th Termination time
+      %th
+      %th
+      %th
+
+  %tbody
+    - @schedules.each do |schedule|
+      %tr
+        %td= schedule.content
+        %td= schedule.plan_type
+        %td= schedule.termination_time
+        %td= link_to 'Show', schedule
+        %td= link_to 'Edit', edit_schedule_path(schedule)
+        %td= link_to 'Destroy', schedule, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Schedule', new_schedule_path
