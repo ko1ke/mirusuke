@@ -17,20 +17,21 @@
       %i.material-icons.left> directions_run
       早退
 
+
 %table
   %thead
     %tr
-      %th 行動
-      %th 概要
-      %th 終了時間
-      %th
+      %th{:width => "10%"} 行動
+      %th{:width => "60%"} 概要
+      %th{:width => "20%"} 終了時間
+      %th{:width => "10%"}
 
   %tbody
     - @schedules.each do |schedule|
       %tr
         %td= type_to_button(schedule)
         %td= schedule.content
-        %td= schedule.termination_time
+        %td= schedule.format_time
         %td= link_to '削除', schedule, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br

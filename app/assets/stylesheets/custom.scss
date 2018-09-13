@@ -1,33 +1,85 @@
 @import "materialize";
 
+@mixin label {
+  cursor: default;
+  margin: 0px;
+  box-shadow: none;
+  &:hover {
+    box-shadow: none;
+  }
+}
+
 .inline-date {
   display: inline-block !important;
   width: auto;
 }
 
-.go_out-btn {
-  @extend .btn;
+.go_out-color {
   @extend .red;
   @extend .lighten-1;
+}
+
+.meeting-color {
+  @extend .indigo;
+  @extend .darken-1;
+}
+
+.vacation-color {
+  @extend .green;
+  @extend .darken-2;
+}
+
+.early_leaving-color {
+  @extend .orange;
+}
+
+.go_out-btn {
+  @extend .btn;
+  @extend .go_out-color;
   margin: 0 5px;
 }
 
 .meeting-btn {
   @extend .btn;
-  @extend .indigo;
-  @extend .darken-1;
+  @extend .meeting-color;
   margin: 0 5px;
 }
 
 .vacation-btn {
   @extend .btn;
-  @extend .green;
-  @extend .darken-2;
+  @extend .vacation-color;
   margin: 0 5px;
 }
 
 .early_leaving-btn {
   @extend .btn;
-  @extend .orange;
+  @extend .early_leaving-color;
   margin: 0 5px;
+}
+
+.submit-btn {
+  color: white;
+  @extend .waves-light;
+  @extend .btn;
+  @extend .waves-effect;
+}
+
+.go_out-label {
+  @extend .go_out-btn;
+  @include label;
+}
+
+.meeting-label {
+  @extend .meeting-btn;
+  @include label;
+}
+
+.vacation-label {
+  @extend .vacation-btn;
+  @include label;
+}
+
+.early_leaving-label {
+  @extend .early_leaving-btn;
+  @include label;
 }

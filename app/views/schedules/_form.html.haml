@@ -7,15 +7,18 @@
           %li= message
 
   .field
-    = f.label :content
+    = f.label :content, '概要'
     = f.text_field :content
 
   .field
     = f.hidden_field :action_type, :value => action_type_str(params[:type_id])
 
   .field
-    = f.label :termination_time
-    = f.datetime_select :termination_time, {use_month_numbers: true}, {class: "browser-default inline-date"}
-      
+    = f.label :termination_time, '終了時間'
+    %br
+    %br
+    = f.datetime_select :termination_time,{default: default_new_termination_time, use_month_numbers: true},{class: "browser-default inline-date"}
+
+  %br
   .actions
-    = f.submit 'Save'
+    = f.submit '保存', class: 'submit-btn'

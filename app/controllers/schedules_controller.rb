@@ -4,7 +4,7 @@ class SchedulesController < ApplicationController
   # GET /schedules
   # GET /schedules.json
   def index
-    @schedules = Schedule.all
+    @schedules = Schedule.where(termination_time: Date.today.beginning_of_day..Date.today.end_of_day)
   end
 
   # # GET /schedules/1
@@ -31,6 +31,7 @@ class SchedulesController < ApplicationController
         format.html { redirect_to root_url, notice: 'Schedule was successfully created.' }
         format.json { render :show, status: :created, location: @schedule }
       else
+        hash = Schedule.action_types
         format.html { render :new }
         format.json { render json: @schedule.errors, status: :unprocessable_entity }
       end

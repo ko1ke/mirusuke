@@ -1,15 +1,13 @@
 module ApplicationHelper
   APP_NAME = 'SubaCo'
 
-  # def flash_message(message, klass)
-  #   content_tag(:div, class: "alert alert-#{klass} alert-dismissible fade show") do
-  #     concat content_tag(:a, '×', class: 'close', data: {dismiss: 'alert'})
-  #     concat raw(message)
-  #   end
-  # end
-  #
   def current_time
     Time.now.strftime('%Y/%m/%d %H:%M')
+  end
+
+  def header_color
+    return "light-blue lighten-1" unless params[:type_id]
+    "#{Schedule.action_types.key(params[:type_id].to_i)}-color"
   end
 
 end
