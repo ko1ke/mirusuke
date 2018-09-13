@@ -11,7 +11,7 @@
     = f.text_field :content
 
   .field
-    = f.hidden_field :action_type, :value => action_type_str(params[:type_id])
+    = f.hidden_field :action_type, :value => @action_type
 
   .field
     = f.label :termination_time, '終了時間'

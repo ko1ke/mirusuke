@@ -6,8 +6,8 @@ module ApplicationHelper
   end
 
   def header_color
-    return "light-blue lighten-1" unless params[:type_id]
-    "#{Schedule.action_types.key(params[:type_id].to_i)}-color"
+    return "light-blue lighten-1" unless @action_type
+    "#{@action_type}-color"
   end
 
 end

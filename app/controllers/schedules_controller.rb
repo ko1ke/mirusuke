@@ -15,6 +15,7 @@ class SchedulesController < ApplicationController
   # GET /schedules/new
   def new
     @schedule = Schedule.new
+    @action_type = params[:action_type]
   end
 
   # GET /schedules/1/edit
@@ -31,7 +32,7 @@ class SchedulesController < ApplicationController
         format.html { redirect_to root_url, notice: 'Schedule was successfully created.' }
         format.json { render :show, status: :created, location: @schedule }
       else
-        hash = Schedule.action_types
+        @action_type = @schedule.action_type
         format.html { render :new }
         format.json { render json: @schedule.errors, status: :unprocessable_entity }
       end

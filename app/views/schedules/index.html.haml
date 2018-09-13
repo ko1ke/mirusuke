@@ -1,19 +1,19 @@
 %h3 今日の予定
 .row
   .col.s12
-    = link_to new_schedule_path(0), class: 'go_out-btn', remote: false, method: :get do
+    = link_to new_schedule_path(:action_type => Schedule.action_types.keys[0]), class: 'go_out-btn', remote: false, method: :get do
       %i.material-icons.left> flight_takeoff
       外出
 
-    = link_to new_schedule_path(1), class: 'meeting-btn', remote: false, method: :get do
+    = link_to new_schedule_path(:action_type => Schedule.action_types.keys[1]), class: 'meeting-btn', remote: false, method: :get do
       %i.material-icons.left> people
       会議
 
-    = link_to new_schedule_path(2), class: 'vacation-btn', remote: false, method: :get do
+    = link_to new_schedule_path(:action_type => Schedule.action_types.keys[2]), class: 'vacation-btn', remote: false, method: :get do
       %i.material-icons.left> hotel
       休暇
 
-    = link_to new_schedule_path(3), class: 'early_leaving-btn', remote: false, method: :get do
+    = link_to new_schedule_path(:action_type => Schedule.action_types.keys[3]), class: 'early_leaving-btn', remote: false, method: :get do
       %i.material-icons.left> directions_run
       早退
 
