@@ -1,0 +1,8 @@
+ja:
+  enums:
+    schedule:
+      action_type:
+        go_out: 外出
+        meeting: 会議
+        vacation: 休暇
+        early_leaving: 早退

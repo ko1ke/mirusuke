@@ -1,4 +1,33 @@
+@import "materialize";
+
 .inline-date {
   display: inline-block !important;
   width: auto;
+}
+
+.go_out-btn {
+  @extend .btn;
+  @extend .red;
+  @extend .lighten-1;
+  margin: 0 5px;
+}
+
+.meeting-btn {
+  @extend .btn;
+  @extend .indigo;
+  @extend .darken-1;
+  margin: 0 5px;
+}
+
+.vacation-btn {
+  @extend .btn;
+  @extend .green;
+  @extend .darken-2;
+  margin: 0 5px;
+}
+
+.early_leaving-btn {
+  @extend .btn;
+  @extend .orange;
+  margin: 0 5px;
 }

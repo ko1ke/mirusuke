@@ -1,25 +1,37 @@
-%h1 Listing schedules
+%h3 今日の予定
+.row
+  .col.s12
+    = link_to new_schedule_path(0), class: 'go_out-btn', remote: false, method: :get do
+      %i.material-icons.left> flight_takeoff
+      外出
+
+    = link_to new_schedule_path(1), class: 'meeting-btn', remote: false, method: :get do
+      %i.material-icons.left> people
+      会議
+
+    = link_to new_schedule_path(2), class: 'vacation-btn', remote: false, method: :get do
+      %i.material-icons.left> hotel
+      休暇
+
+    = link_to new_schedule_path(3), class: 'early_leaving-btn', remote: false, method: :get do
+      %i.material-icons.left> directions_run
+      早退
 
 %table
   %thead
     %tr
-      %th Content
-      %th Plan type
-      %th Termination time
-      %th
-      %th
+      %th 行動
+      %th 概要
+      %th 終了時間
       %th
 
   %tbody
     - @schedules.each do |schedule|
       %tr
+        %td= type_to_button(schedule)
         %td= schedule.content
-        %td= schedule.plan_type
         %td= schedule.termination_time
-        %td= link_to 'Show', schedule
-        %td= link_to 'Edit', edit_schedule_path(schedule)
-        %td= link_to 'Destroy', schedule, method: :delete, data: { confirm: 'Are you sure?' }
+        %td= link_to '削除', schedule, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
 
-= link_to 'New Schedule', new_schedule_path

@@ -9,12 +9,13 @@
   .field
     = f.label :content
     = f.text_field :content
+
   .field
-    = f.label :plan_type
-    = f.number_field :plan_type
+    = f.hidden_field :action_type, :value => action_type_str(params[:type_id])
+
   .field
     = f.label :termination_time
     = f.datetime_select :termination_time, {use_month_numbers: true}, {class: "browser-default inline-date"}
-
+      
   .actions
     = f.submit 'Save'
