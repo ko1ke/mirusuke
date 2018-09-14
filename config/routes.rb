@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => { :invitations => 'users/invitations' }
   root 'schedules#index'
   resources :schedules, only: [:new, :create, :show, :edit, :update, :destroy]
 
