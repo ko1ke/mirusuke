@@ -54,6 +54,8 @@ group :development do
   gem 'rails-erd'
   gem 'bullet'
   gem 'rack-mini-profiler'
+  gem 'letter_opener'
+  gem 'letter_opener_web'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
