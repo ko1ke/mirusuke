@@ -1,7 +1,7 @@
 -#%nav.light-blue.lighten-1
 %nav{class: header_color}
   .nav-wrapper.container
-    %a#logo-container.left.brand-logo{:href => "#"} Logo
+    %a#logo-container.left.brand-logo{:href => "/"}= ApplicationHelper::APP_NAME
     %ul.right
       %li
         = current_time

@@ -6,3 +6,12 @@ ja:
         meeting: 会議
         vacation: 休暇
         early_leaving: 早退
+
+  activerecord:
+    models:
+      schedule: スケジュール
+    attributes:
+      schedule:
+        action_type: 種類
+        content: 概要
+        termination_time: 終了時間

@@ -1,7 +1,7 @@
 = form_for @schedule do |f|
   - if @schedule.errors.any?
     #error_explanation
-      %h2= "#{pluralize(@schedule.errors.count, "error")} prohibited this schedule from being saved:"
+      %h4= "#{@schedule.errors.count}個のエラー："
       %ul
         - @schedule.errors.full_messages.each do |message|
           %li= message
@@ -15,7 +15,6 @@
 
   .field
     = f.label :termination_time, '終了時間'
-    %br
     %br
     = f.datetime_select :termination_time,{default: default_new_termination_time, use_month_numbers: true},{class: "browser-default inline-date"}
 

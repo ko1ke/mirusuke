@@ -12,6 +12,7 @@
 .inline-date {
   display: inline-block !important;
   width: auto;
+  margin: 10px 0;
 }
 
 .go_out-color {
@@ -82,4 +83,21 @@
 .early_leaving-label {
   @extend .early_leaving-btn;
   @include label;
+}
+
+#error_explanation {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  @extend .red;
+  @extend .lighten-4;
+  @extend .card-panel;
+  h4{
+    font-size: 1.25rem;
+    margin: 1rem 0 1rem 0;
+  }
+}
+
+.field_with_errors * {
+  @extend .red;
+  @extend .lighten-4;
 }

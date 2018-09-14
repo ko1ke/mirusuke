@@ -1,5 +1,5 @@
 module ApplicationHelper
-  APP_NAME = 'SubaCo'
+  APP_NAME = 'MiruSuke'
 
   def current_time
     Time.now.strftime('%Y/%m/%d %H:%M')

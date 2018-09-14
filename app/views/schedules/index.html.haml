@@ -21,8 +21,8 @@
 %table
   %thead
     %tr
-      %th{:width => "10%"} 行動
-      %th{:width => "60%"} 概要
+      %th{:width => "15%"} 行動
+      %th{:width => "55%"} 概要
       %th{:width => "20%"} 終了時間
       %th{:width => "10%"}
 
@@ -32,7 +32,7 @@
         %td= type_to_button(schedule)
         %td= schedule.content
         %td= schedule.format_time
-        %td= link_to '削除', schedule, method: :delete, data: { confirm: 'Are you sure?' }
+        %td= link_to '削除', schedule, method: :delete, data: { confirm: '削除しますか?' }
 
 %br
 
