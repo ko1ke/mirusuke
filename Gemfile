@@ -22,9 +22,13 @@ gem 'haml-rails'
 gem 'toastr-rails', '~>  1.0.3'
 gem 'jquery-rails', '~> 4.3.3'
 
-# translation
+# Translation
 gem 'rails-i18n', '~> 5.1.1'
 gem 'enum_help'
+
+# User and Group authentication
+gem 'devise',           '~> 4.2'
+gem 'devise_invitable', '~> 1.7.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
