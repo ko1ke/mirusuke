@@ -11,12 +11,12 @@ ja:
     models:
       schedule: スケジュール
       user: ユーザ
+      group: グループ
     attributes:
       schedule:
         action_type: 種類
         content: 概要
         termination_time: 終了時間
-
       user:
         confirmation_sent_at: "パスワード確認送信時刻"
         confirmation_token: "パスワード確認用トークン"
@@ -40,6 +40,9 @@ ja:
         sign_in_count: "ログイン回数"
         username: "名前"
         group_name: "グループ名"
+        group_id: "グループ"
         unconfirmed_email: "未確認Eメール"
         unlock_token: "ロック解除用トークン"
         updated_at: "更新日"
+      group:
+        name: 名前

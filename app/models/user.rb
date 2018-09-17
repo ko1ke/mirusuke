@@ -29,6 +29,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, invite_for: 24.hours
   belongs_to :group, inverse_of: :users
   attr_accessor :group_name
-  validates :username, presence: true
+  validates :username, :group_id, presence: true
 
 end
