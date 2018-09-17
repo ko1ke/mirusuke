@@ -4,6 +4,7 @@ class Users::InvitationsController < Devise::InvitationsController
   end
 
   def create
+    params[:user][:group_id] = current_inviter.group_id
     super
   end
 
@@ -18,4 +19,7 @@ class Users::InvitationsController < Devise::InvitationsController
   def destroy
     super
   end
+
+
+
 end

@@ -10,10 +10,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-  # def create
-  #   binding.pry
-  #   super
-  # end
+  # override method
   def create
     group = Group.create(name: sign_up_params[:group_name])
     build_resource(sign_up_params)
