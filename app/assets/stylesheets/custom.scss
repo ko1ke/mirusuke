@@ -9,6 +9,22 @@
   }
 }
 
+h1 {
+  font-size: 2.5rem !important;
+}
+
+h2 {
+  font-size: 2rem !important;
+}
+
+h3 {
+  font-size: 1.75rem !important;
+}
+
+h4 {
+  font-size: 1.5rem !important;
+}
+
 .inline-date {
   display: inline-block !important;
   width: auto;
@@ -91,8 +107,7 @@
   @extend .red;
   @extend .lighten-4;
   @extend .card-panel;
-  h4{
-    font-size: 1.25rem;
+  h2{
     margin: 1rem 0 1rem 0;
   }
 }
@@ -101,3 +116,4 @@
   @extend .red;
   @extend .lighten-4;
 }
+

@@ -1,4 +1,4 @@
-%h3 スケジュール登録
+%h2 スケジュール登録
 .row
   .col.s12
     = link_to new_schedule_path(:action_type => Schedule.action_types.keys[0]), class: 'go_out-btn', remote: false, method: :get do
@@ -18,7 +18,7 @@
       早退
 
 %hr
-%h3 スケジュール一覧（#{current_time}）
+%h2 スケジュール一覧（#{current_time}）
 %table
   %thead
     %tr

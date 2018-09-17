@@ -1,7 +1,7 @@
 = form_for @schedule do |f|
   - if @schedule.errors.any?
     #error_explanation
-      %h4= "#{@schedule.errors.count}個のエラー："
+      %h2= "#{@schedule.errors.count}件のエラー："
       %ul
         - @schedule.errors.full_messages.each do |message|
           %li= message
