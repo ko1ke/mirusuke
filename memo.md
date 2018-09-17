@@ -2,13 +2,14 @@
 - username
 - add group model
 - invitation including group
-- invitationのパスワード設定って？　password
+- invitationのパスワード設定って？  - > 登録時に要請
 - devise viewの改修および装飾
 
 
 # Model 
 - Userにはgroup_idとusernameが必要
-- Groupは招待メールにセットすべきか
+- User Createの際に
+- Groupは招待メールにセットすべきか -> user.groupで逆引きして参照させること
 - activerecordが日本語化しないよ？？？ -> しましたが？
 
 # View
@@ -16,7 +17,6 @@
 - 個別なのはどうする 
 - current_user.schedulesのものもつくること   
 - react使って”終日”を入れるか？ 
-
 
 # Controller
 - 表示するのはgroup.usersの今日の予定だけでいい 。他は無視  

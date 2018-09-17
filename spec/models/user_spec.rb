@@ -18,6 +18,8 @@
 #  invited_by_type        :string
 #  invited_by_id          :bigint(8)
 #  invitations_count      :integer          default(0)
+#  username               :string
+#  group_id               :integer
 #
 
 require 'rails_helper'

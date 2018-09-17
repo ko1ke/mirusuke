@@ -18,6 +18,8 @@
 #  invited_by_type        :string
 #  invited_by_id          :bigint(8)
 #  invitations_count      :integer          default(0)
+#  username               :string
+#  group_id               :integer
 #
 
 class User < ApplicationRecord
@@ -25,4 +27,18 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :invitable, :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, invite_for: 24.hours
+  belongs_to :group, inverse_of: :users
+  attr_accessor :group_name
+  validates :username, presence: true
+
+  before_save :find_or_create_group
+
+  def find_or_create_group
+
+    if group_name.present?
+      self.group = Group.find_or_create_by!(name: group_name)
+    else
+      self.group = nil
+    end
+  end
 end
