@@ -2,10 +2,11 @@
 %nav{class: header_color}
   .nav-wrapper.container
     %a#logo-container.left.brand-logo{:href => "/"}= ApplicationHelper::APP_NAME
-    %ul.right
-      %li
-        = current_time
-      %li
-        %a{:href => "#"} Navbar Link
-      %li
-        %a{:href => "#"} Navbar Link
+    - if user_signed_in?
+      %ul.right
+        %li
+          = link_to 'プロフィール', edit_user_registration_path
+        %li
+          = link_to 'ログアウト', destroy_user_session_path, method: :delete
+        %li
+          = link_to '招待', new_user_invitation_path

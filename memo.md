@@ -1,3 +1,11 @@
+# todo
+- username
+- add group model
+- invitation including group
+- invitationのパスワード設定って？　password
+- devise viewの改修および装飾
+
+
 # Model 
 - Userにはgroup_idとusernameが必要
 - Groupは招待メールにセットすべきか
