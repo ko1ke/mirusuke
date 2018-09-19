@@ -112,8 +112,14 @@ h4 {
   }
 }
 
-.field_with_errors * {
+.field_with_errors label {
   @extend .red;
   @extend .lighten-4;
 }
+
+#time-setting-component {
+  padding-top: 6px;
+}
+
+
 

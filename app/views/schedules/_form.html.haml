@@ -13,10 +13,11 @@
   .field
     = f.hidden_field :action_type, :value => @action_type
 
+
   .field
     = f.label :termination_time, '終了時間'
     %br
-    = f.datetime_select :termination_time,{default: default_new_termination_time, use_month_numbers: true},{class: "browser-default inline-date"}
+    #time-setting-component
 
   %br
   .actions
