@@ -16,3 +16,7 @@
 //= require materialize
 //= require toastr
 //= require_tree .
+
+$(document).on('turbolinks:load', function () {
+  $(".dropdown-trigger").dropdown();
+});

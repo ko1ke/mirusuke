@@ -13,6 +13,7 @@
       %label{:for => "user_remember_me"}
         = f.check_box :remember_me
         %span ユーザーを記憶する
+  %br/
   .actions
-    = f.submit "Log in"
+    = f.submit "ログイン", class: "submit-btn"
 = render "devise/shared/links"

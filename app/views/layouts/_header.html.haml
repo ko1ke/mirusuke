@@ -1,12 +1,35 @@
--#%nav.light-blue.lighten-1
+%ul#dropdown.dropdown-content
+  %li
+    = link_to 'ログアウト', destroy_user_session_path, method: :delete
+  %li.divider
+  %li
+    = link_to 'プロフィール', edit_user_registration_path
+  %li.divider
+  %li
+    = link_to '招待', new_user_invitation_path
+
 %nav{class: header_color}
   .nav-wrapper.container
     %a#logo-container.left.brand-logo{:href => "/"}= ApplicationHelper::APP_NAME
     - if user_signed_in?
       %ul.right
         %li
-          = link_to 'プロフィール', edit_user_registration_path
+          = link_to 'スケジュール', root_path
         %li
-          = link_to 'ログアウト', destroy_user_session_path, method: :delete
-        %li
-          = link_to '招待', new_user_invitation_path
+          %a.dropdown-trigger{"data-target" => "dropdown", :href => "#!"}
+            ユーザ管理
+            %i.material-icons.right arrow_drop_down
+
+
+
+-#%nav{class: header_color}
+-#  .nav-wrapper.container
+-#    %a#logo-container.left.brand-logo{:href => "/"}= ApplicationHelper::APP_NAME
+-#    - if user_signed_in?
+-#      %ul.right
+-#        %li
+-#          = link_to 'プロフィール', edit_user_registration_path
+-#        %li
+-#          = link_to 'ログアウト', destroy_user_session_path, method: :delete
+-#        %li
+-#          = link_to '招待', new_user_invitation_path
