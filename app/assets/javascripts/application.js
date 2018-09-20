@@ -14,7 +14,6 @@
 //= require jquery3
 //= require turbolinks
 //= require materialize
-//= require toastr
 //= require_tree .
 
 $(document).on('turbolinks:load', function () {

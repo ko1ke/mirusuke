@@ -1,5 +1,9 @@
 - flash.each do |type, msg|
-  - type = 'info' if type == 'notice'
-  - type = 'error' if type == 'alert'
-  :javascript
-    toastr['#{type}']('#{msg}');
+  - color = 'green lighten-1' if type == 'success'
+  - color = 'light-blue lighten-3' if type == 'notice'
+  - color = 'lime lighten-3' if type == 'warning'
+  - color = 'red lighten-1' if type == 'alert'
+
+  = javascript_tag "M.toast({html: '#{msg}',
+                             classes: '#{color}',
+                             displayLength: 2000})"

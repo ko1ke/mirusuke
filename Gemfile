@@ -19,7 +19,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 gem 'erb2haml'
 gem 'haml-rails'
-gem 'toastr-rails', '~>  1.0.3'
 gem 'jquery-rails', '~> 4.3.3'
 
 # Translation
