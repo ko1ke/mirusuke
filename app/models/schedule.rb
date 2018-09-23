@@ -12,6 +12,7 @@
 #  updated_at       :datetime         not null
 
 class Schedule < ApplicationRecord
+  belongs_to :user, inverse_of: :schedules
   enum action_type: {
     go_out: 0,
     meeting: 1,

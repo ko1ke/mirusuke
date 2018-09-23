@@ -28,6 +28,7 @@ class User < ApplicationRecord
   devise :invitable, :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, invite_for: 24.hours
   belongs_to :group, inverse_of: :users
+  has_many :schedules, inverse_of: :user, dependent: :destroy
   attr_accessor :group_name
   validates :username, :group_id, presence: true
 

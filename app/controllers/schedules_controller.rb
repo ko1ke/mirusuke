@@ -14,7 +14,7 @@ class SchedulesController < ApplicationController
 
   # GET /schedules/new
   def new
-    @schedule = Schedule.new
+    @schedule = current_user.schedules.new
     @action_type = params[:action_type]
   end
 
@@ -25,11 +25,11 @@ class SchedulesController < ApplicationController
   # POST /schedules
   # POST /schedules.json
   def create
-    @schedule = Schedule.new(schedule_params)
+    @schedule = current_user.schedules.new(schedule_params)
 
     respond_to do |format|
       if @schedule.save
-        format.html { redirect_to root_url, notice: 'Schedule was successfully created.' }
+        format.html { redirect_to root_url, notice: 'スケジュールが作成されました' }
         format.json { render :show, status: :created, location: @schedule }
       else
         @action_type = @schedule.action_type
@@ -41,24 +41,24 @@ class SchedulesController < ApplicationController
 
   # PATCH/PUT /schedules/1
   # PATCH/PUT /schedules/1.json
-  def update
-    respond_to do |format|
-      if @schedule.update(schedule_params)
-        format.html { redirect_to root_url, notice: 'Schedule was successfully updated.' }
-        format.json { render :show, status: :ok, location: @schedule }
-      else
-        format.html { render :edit }
-        format.json { render json: @schedule.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  # def update
+  #   respond_to do |format|
+  #     if @schedule.update(schedule_params)
+  #       format.html { redirect_to root_url, notice: 'Schedule was successfully updated.' }
+  #       format.json { render :show, status: :ok, location: @schedule }
+  #     else
+  #       format.html { render :edit }
+  #       format.json { render json: @schedule.errors, status: :unprocessable_entity }
+  #     end
+  #   end
+  # end
 
   # DELETE /schedules/1
   # DELETE /schedules/1.json
   def destroy
     @schedule.destroy
     respond_to do |format|
-      format.html { redirect_to root_url, notice: 'Schedule was successfully destroyed.' }
+      format.html { redirect_to root_url, notice: 'スケジュールが削除されました' }
       format.json { head :no_content }
     end
   end
