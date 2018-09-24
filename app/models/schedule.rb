@@ -13,6 +13,8 @@
 
 class Schedule < ApplicationRecord
   belongs_to :user, inverse_of: :schedules
+  # belongs_to :group, inverse_of: :schedules
+
   enum action_type: {
     go_out: 0,
     meeting: 1,
@@ -28,8 +30,8 @@ class Schedule < ApplicationRecord
     end
   end
 
-  def user_group_name
-    current_user.group.name
+  def user_group
+    current_user.group
   end
 
   def format_time

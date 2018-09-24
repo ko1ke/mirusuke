@@ -5,7 +5,7 @@
   %p
     = f.label :username
     %br/
-    = f.password_field :username
+    = f.text_field :username
   - if f.object.class.require_password_on_accepting
     %p
       = f.label :password
@@ -15,4 +15,4 @@
       = f.label :password_confirmation
       %br/
       = f.password_field :password_confirmation
-  %p= f.submit t("devise.invitations.edit.submit_button")
+  %p= f.submit t("devise.invitations.edit.submit_button"), class: 'submit-btn'

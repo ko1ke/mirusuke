@@ -19,6 +19,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 gem 'erb2haml'
 gem 'haml-rails'
+gem 'toastr-rails', '~>  1.0.3'
 gem 'jquery-rails', '~> 4.3.3'
 
 # Translation
@@ -26,7 +27,7 @@ gem 'rails-i18n', '~> 5.1.1'
 gem 'enum_help'
 
 # User and Group authentication
-gem 'devise', '~> 4.2'
+gem 'devise',           '~> 4.2'
 gem 'devise_invitable', '~> 1.7.0'
 
 gem 'webpacker', '~> 3.0'

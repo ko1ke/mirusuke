@@ -4,7 +4,7 @@ class SchedulesController < ApplicationController
   # GET /schedules
   # GET /schedules.json
   def index
-    @schedules = Schedule.where(termination_time: Date.today.beginning_of_day..Date.today.end_of_day)
+    @schedules = Schedule.where(user_id: current_user.group.users, termination_time: DateTime.now..Date.today.end_of_day)
   end
 
   # # GET /schedules/1

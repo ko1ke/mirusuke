@@ -11,5 +11,6 @@
 
 class Group < ApplicationRecord
   has_many :users, inverse_of: :group, dependent: :destroy
+  has_many :schedules, through: :users, inverse_of: :group
   validates :name, presence: true
 end
