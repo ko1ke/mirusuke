@@ -30,6 +30,8 @@ gem 'devise', '~> 4.2'
 gem 'devise_invitable', '~> 1.7.0'
 
 gem 'webpacker', '~> 3.0'
+gem 'gon', '~> 6.2'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
