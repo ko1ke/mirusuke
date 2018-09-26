@@ -17,6 +17,7 @@ ja:
         action_type: 種類
         content: 概要
         termination_time: 終了時間
+        start_time: 開始時間
       user:
         confirmation_sent_at: "パスワード確認送信時刻"
         confirmation_token: "パスワード確認用トークン"

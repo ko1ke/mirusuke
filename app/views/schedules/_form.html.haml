@@ -13,12 +13,15 @@
   .field
     = f.hidden_field :action_type, :value => @action_type
 
+  .field
+    = f.label :start_time, '開始時間'
+    %br
+    #start-time-setting
 
   .field
     = f.label :termination_time, '終了時間'
     %br
-    #time-setting-component
-
+    #termination-time-setting
   %br
   .actions
     = f.submit '保存', class: 'submit-btn'

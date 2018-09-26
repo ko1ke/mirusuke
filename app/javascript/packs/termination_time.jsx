@@ -4,9 +4,9 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import TimeSettingSelector from 'TimeSettingSelector'
+import TerminationTimeSetting from 'TerminationTimeSetting'
 
 document.addEventListener('turbolinks:load', () => {
-  let element = document.getElementById("time-setting-component");
-  ReactDOM.render(<TimeSettingSelector />, element);
+  let element = document.getElementById("termination-time-setting");
+  ReactDOM.render(<TerminationTimeSetting />, element);
 });

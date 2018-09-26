@@ -3,8 +3,8 @@ module SchedulesHelper
     content_tag(:span, instance.action_type_i18n, class: "#{instance.action_type}-label")
   end
 
-  def default_new_termination_time
-    now = DateTime.now
-    DateTime.new(now.year, now.month, now.day, now.hour + 1)
+  def format_time(time_obj)
+    time_obj.strftime('%m/%d-%H:%M')
   end
+
 end

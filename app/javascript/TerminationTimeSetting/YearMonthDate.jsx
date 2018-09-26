@@ -17,7 +17,7 @@ let getOptions = (startVal, endVal, keyPrefix) => {
 class YearMonthDate extends React.Component {
   render() {
     return (
-      <span id="year-month">
+      <span>
         <select id="schedule_termination_time_1i" name="schedule[termination_time(1i)]"
                 className="browser-default inline-date" defaultValue={year}>
           <option value={year}>{year}</option>

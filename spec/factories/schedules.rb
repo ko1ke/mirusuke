@@ -8,6 +8,8 @@
 #  termination_time :datetime
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null
+#  user_id          :integer
+#  start_time       :datetime
 #
 
 FactoryBot.define do

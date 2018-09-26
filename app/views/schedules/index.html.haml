@@ -25,7 +25,7 @@
       %th{:width => "15%"} 行動
       %th{:width => "10%"} メンバー名
       %th{:width => "50%"} 概要
-      %th{:width => "15%"} 終了時間
+      %th{:width => "15%"} 期間
       %th{:width => "10%"}
 
   %tbody
@@ -34,7 +34,7 @@
         %td= type_to_button(schedule)
         %td= User.find(schedule.user_id).username
         %td= schedule.content
-        %td= schedule.format_time
+        %td= "#{format_time(schedule.start_time)} ～ #{format_time(schedule.termination_time)}"
         %td= link_to '削除', schedule, method: :delete, data: { confirm: '削除しますか?' }
 
 %br
@@ -43,7 +43,7 @@
   google.charts.load("current", {packages:["timeline"], 'language': 'ja'});
   google.charts.setOnLoadCallback(drawChart);
   function drawChart() {
-    var container = document.getElementById('example3.1');
+    var container = document.getElementById('timeline');
     var chart = new google.visualization.Timeline(container);
     var dataTable = new google.visualization.DataTable();
     dataTable.addColumn({ type: 'string', id: 'Position' });
@@ -59,7 +59,8 @@
     );
     var options = {
       timeline: { singleColor: '#808080' },
+      height: 200,
     };
     chart.draw(dataTable, options);
   }
-%div{:id => "example3.1"}
+%div{:id => "timeline"}

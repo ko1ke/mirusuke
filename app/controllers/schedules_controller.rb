@@ -1,23 +1,24 @@
 class SchedulesController < ApplicationController
-  before_action :set_schedule, only: [:show, :edit, :update, :destroy]
+  before_action :set_schedule, only: [:edit, :destroy]
 
   # GET /schedules
   # GET /schedules.json
   def index
-    @schedules = Schedule.where(user_id: current_user.group.users).where('termination_time > ?', DateTime.now).order(:termination_time)
+    @schedules = Schedule.where(user_id: current_user.group.users)
+                     .where('start_time < ? AND termination_time > ?', Date.today.end_of_day, DateTime.now)
+                     .order(:termination_time)
     gon.arr_for_chart = []
 
     @schedules.each do |schedule|
       username = User.find(schedule.user_id).username
       type = schedule.action_type_i18n
-      termination_time = schedule.termination_time > Date.today.end_of_day ? js_time_str(Date.today.end_of_day) : js_time_str(schedule.termination_time)
-      gon.arr_for_chart << [username, type, js_time_str(DateTime.now), termination_time]
-    end
-  end
 
-  # GET /schedules/1
-  # GET /schedules/1.json
-  def show
+      start_time = schedule.start_time < Date.today.beginning_of_day ?
+                       js_time_str(Date.today.beginning_of_day) : js_time_str(schedule.start_time)
+      termination_time = schedule.termination_time > Date.today.end_of_day ?
+                             js_time_str(Date.today.end_of_day) : js_time_str(schedule.termination_time)
+      gon.arr_for_chart << [username, type, start_time, termination_time]
+    end
   end
 
   # GET /schedules/new
@@ -47,20 +48,6 @@ class SchedulesController < ApplicationController
     end
   end
 
-  # PATCH/PUT /schedules/1
-  # PATCH/PUT /schedules/1.json
-  # def update
-  #   respond_to do |format|
-  #     if @schedule.update(schedule_params)
-  #       format.html { redirect_to root_url, notice: 'Schedule was successfully updated.' }
-  #       format.json { render :show, status: :ok, location: @schedule }
-  #     else
-  #       format.html { render :edit }
-  #       format.json { render json: @schedule.errors, status: :unprocessable_entity }
-  #     end
-  #   end
-  # end
-
   # DELETE /schedules/1
   # DELETE /schedules/1.json
   def destroy
@@ -80,7 +67,7 @@ class SchedulesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def schedule_params
-    params.require(:schedule).permit(:content, :action_type, :termination_time)
+    params.require(:schedule).permit(:content, :action_type, :start_time, :termination_time)
   end
 
   def js_time_str(datetime_obj)
