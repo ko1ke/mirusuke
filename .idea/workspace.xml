@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38409bc4-5801-40dd-be07-50a5d828e4b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/schedules.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/schedules.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/schedules_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/schedules_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/mailer/invitation_instructions.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/mailer/invitation_instructions.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/mailer/invitation_instructions.text.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/mailer/invitation_instructions.text.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/schedules/_form.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/schedules/_form.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/schedules/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/schedules/index.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/schedules/index_of_group.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/schedules/index_of_group.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/devise.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/devise_invitable.en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/devise_invitable.en.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/devise_invitable.ja.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/devise_invitable.ja.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/schedule.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/schedule.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -74,14 +61,14 @@
     <session id="1805086100">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -92,10 +79,10 @@
           <entry key="haml" value="51" />
           <entry key="jbuilder" value="5" />
           <entry key="js" value="6" />
-          <entry key="jsx" value="66" />
+          <entry key="jsx" value="68" />
           <entry key="lock" value="2" />
           <entry key="md" value="1" />
-          <entry key="rb" value="24" />
+          <entry key="rb" value="25" />
           <entry key="scss" value="2" />
           <entry key="yml" value="4" />
         </counts>
@@ -104,11 +91,11 @@
         <counts>
           <entry key="CoffeeScript" value="3" />
           <entry key="Haml" value="51" />
-          <entry key="JSX Harmony" value="66" />
+          <entry key="JSX Harmony" value="68" />
           <entry key="JavaScript" value="6" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Ruby" value="31" />
+          <entry key="Ruby" value="32" />
           <entry key="SCSS" value="2" />
           <entry key="YAML" value="4" />
         </counts>
@@ -121,7 +108,7 @@
           <entry key="js" value="19" />
           <entry key="jsx" value="808" />
           <entry key="md" value="41" />
-          <entry key="rb" value="1077" />
+          <entry key="rb" value="1092" />
           <entry key="yml" value="139" />
         </counts>
       </usages-collector>
@@ -132,7 +119,7 @@
           <entry key="JSX Harmony" value="808" />
           <entry key="JavaScript" value="74" />
           <entry key="Markdown" value="41" />
-          <entry key="Ruby" value="1101" />
+          <entry key="Ruby" value="1116" />
           <entry key="YAML" value="139" />
         </counts>
       </usages-collector>
@@ -146,23 +133,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/schedule.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="236">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/javascript/TerminationTimeSetting/index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/invitation_instructions.text.haml">
+        <entry file="file://$PROJECT_DIR$/app/javascript/TerminationTimeSetting/RecentType.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state>
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -170,7 +163,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/invitation_instructions.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="126">
               <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
             </state>
           </provider>
@@ -293,7 +286,6 @@
         <option value="$PROJECT_DIR$/app/javascript/StartTimeSetting/FirstAfternoonType.jsx" />
         <option value="$PROJECT_DIR$/app/javascript/StartTimeSetting/index.jsx" />
         <option value="$PROJECT_DIR$/app/javascript/StartTimeSetting/FirstMorningType.jsx" />
-        <option value="$PROJECT_DIR$/app/models/schedule.rb" />
         <option value="$PROJECT_DIR$/app/views/schedules/_register_buttons.haml" />
         <option value="$PROJECT_DIR$/app/views/schedules/index_mine.html.haml" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
@@ -314,6 +306,7 @@
         <option value="$PROJECT_DIR$/config/locales/devise_invitable.ja.yml" />
         <option value="$PROJECT_DIR$/app/views/schedules/_form.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/schedules.coffee" />
+        <option value="$PROJECT_DIR$/app/models/schedule.rb" />
       </list>
     </option>
   </component>
@@ -332,8 +325,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="423" />
-    <option name="y" value="200" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -342,6 +335,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -404,6 +399,13 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="javascript" type="462c0819:PsiDirectoryNode" />
               <item name="packs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wru" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+              <item name="TerminationTimeSetting" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wru" type="b2602c69:ProjectViewProjectNode" />
@@ -496,12 +498,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="header&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/layouts/_header.html.haml&#10;application&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/layouts/application.html.haml&#10;gem&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/Gemfile&#10;flash&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/layouts/_flash.html.haml&#10;appli&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/layouts/application.html.haml&#10;schedule con&#9;null&#9;null&#10;schedule.rb&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/models/schedule.rb&#10;sche&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/db/schema.rb&#10;index&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/schedules/index.html.haml&#10;custom&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/assets/stylesheets/custom.scss" />
+    <property name="SearchEverywhereHistoryKey" value="schedule&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/models/schedule.rb&#10;header&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/layouts/_header.html.haml&#10;application&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/layouts/application.html.haml&#10;gem&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/Gemfile&#10;flash&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/layouts/_flash.html.haml&#10;appli&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/layouts/application.html.haml&#10;schedule con&#9;null&#9;null&#10;schedule.rb&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/models/schedule.rb&#10;sche&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/db/schema.rb&#10;index&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/schedules/index.html.haml&#10;custom&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/assets/stylesheets/custom.scss" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
@@ -706,17 +706,18 @@
       <workItem from="1537951804752" duration="117000" />
       <workItem from="1538006227194" duration="20069000" />
       <workItem from="1538027021271" duration="2497000" />
+      <workItem from="1538029902209" duration="498000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96588000" />
+    <option name="totallyTimeSpent" value="97086000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49760765" visible="true" weight="0.27771854" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49760765" visible="true" weight="0.28091684" />
       <window_info id="Structure" order="1" sideWeight="0.50239235" side_tool="true" weight="0.24043368" />
       <window_info id="Favorites" order="2" sideWeight="0.50127226" side_tool="true" weight="0.21908316" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -808,20 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/javascript/TerminationTimeSetting/RecentType.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/javascript/TerminationTimeSetting/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="54" column="15" lean-forward="true" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/javascript/packs/termination_time.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -893,13 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/schedule.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/schedules_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -956,10 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#228#253#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1009,24 +985,24 @@
     <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.haml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/devise_invitable.ja.yml">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        <state relative-caret-position="189">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/invitation_instructions.text.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/invitation_instructions.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1037,24 +1013,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/invitation_instructions.text.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="420">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/invitation_instructions.html.haml">
+    <entry file="file://$PROJECT_DIR$/config/locales/devise_invitable.ja.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        <state relative-caret-position="525">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/schedules_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        <state relative-caret-position="147">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1065,13 +1041,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+    <entry file="file://$PROJECT_DIR$/app/controllers/schedules_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="798">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/schedule.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/javascript/TerminationTimeSetting/RecentType.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/javascript/TerminationTimeSetting/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
         </state>
       </provider>
     </entry>

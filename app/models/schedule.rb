@@ -28,6 +28,6 @@ class Schedule < ApplicationRecord
   def time_check
     errors.add(:start_time, 'は現在の日時を指定できません') if start_time <= DateTime.now
     errors.add(:termination_time, 'は過去の日時を指定できません') if termination_time <= DateTime.now
-    errors.add(:start_time, 'は終了時間より後の日時を指定できません') if start_time > termination_time
+    errors.add(:start_time, 'は終了時間以前の日時を指定できません') if start_time >= termination_time
   end
 end
