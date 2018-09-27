@@ -1,4 +1,4 @@
-%h2 Log in
+%h2 ログイン
 = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
   .field
     = f.label :email
@@ -16,4 +16,7 @@
   %br/
   .actions
     = f.submit "ログイン", class: "submit-btn"
+  %br/
+
+%h2 登録はこちら
 = render "devise/shared/links"

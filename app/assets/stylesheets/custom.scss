@@ -81,6 +81,15 @@ h4 {
   @extend .waves-effect;
 }
 
+.sign-up-btn {
+  color: white;
+  @extend .waves-light;
+  @extend .btn;
+  @extend .waves-effect;
+  @extend .orange;
+  @extend .darken-4;
+}
+
 .go_out-label {
   @extend .go_out-btn;
   @include label;
