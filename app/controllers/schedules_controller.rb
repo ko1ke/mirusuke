@@ -1,10 +1,10 @@
 class SchedulesController < ApplicationController
-  before_action :set_schedule, only: [:edit, :destroy]
+  before_action :set_schedule, only: [:destroy]
 
   def index_of_group
     @schedules = Schedule.where(user_id: current_user.group.users)
                      .where('start_time < ? AND termination_time > ?', Date.today.end_of_day, DateTime.now)
-                     .order(:termination_time)
+                     .order(:start_time)
     gon.arr_for_chart = []
 
     @schedules.each do |schedule|
@@ -24,14 +24,15 @@ class SchedulesController < ApplicationController
   def index
     @schedules = Schedule.where(user_id: current_user)
                      .where('termination_time > ?', DateTime.now)
-                     .order(:termination_time)
+                     .order(:start_time)
     gon.arr_for_chart = []
 
-    @schedules.each do |schedule|
+    @schedules.each_with_index do |schedule, index|
+      order_num = (index + 1).to_s
       type = schedule.action_type_i18n
       start_time = js_time_str(schedule.start_time)
       termination_time = js_time_str(schedule.termination_time)
-      gon.arr_for_chart << [type, start_time, termination_time]
+      gon.arr_for_chart << [order_num, type, start_time, termination_time]
     end
   end
 
@@ -39,10 +40,6 @@ class SchedulesController < ApplicationController
   def new
     @schedule = current_user.schedules.new
     @action_type = params[:action_type]
-  end
-
-  # GET /schedules/1/edit
-  def edit
   end
 
   # POST /schedules

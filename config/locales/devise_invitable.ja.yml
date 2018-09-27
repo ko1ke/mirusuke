@@ -17,6 +17,7 @@ ja:
         submit_button: 'パスワードを設定する'
     mailer:
       invitation_instructions:
+        from: 'ユーザー名 "%{username}" 、グループ名 "%{groupname}" より：'
         subject: '招待を承認するには'
         hello: 'こんにちは、%{email}さん'
         someone_invited_you: '%{url}に招待されました。以下のリンクから承認できます。'

@@ -4,7 +4,7 @@ Rails.application.routes.draw do
       :registrations => 'users/registrations'
   }
   root 'schedules#index'
-  resources :schedules, only: [:new, :create, :edit, :destroy]
+  resources :schedules, only: [:new, :create, :destroy]
   get 'schedules/index_of_group', to: 'schedules#index_of_group', as: 'index_of_group'
 
   mount LetterOpenerWeb::Engine, at: '/letter_opener' if Rails.env.development?

@@ -1,3 +1,4 @@
+%p= t("devise.mailer.invitation_instructions.from", username: @user.invited_by.username, groupname:Group.find(@user.invited_by.group_id).name)
 = t("devise.mailer.invitation_instructions.hello", email: @resource.email)
 = t("devise.mailer.invitation_instructions.someone_invited_you", url: root_url)
 = accept_invitation_url(@resource, :invitation_token => @token)

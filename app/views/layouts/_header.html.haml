@@ -1,8 +1,9 @@
 %ul#dropdown-schedule.dropdown-content
+  -# turbolinksを使うとchartが前の画面のままになることがあるのでfalseにした
   %li
-    = link_to 'あなた', root_path
+    = link_to 'あなた', root_path, data: {"turbolinks" => false}
   %li
-    = link_to 'グループ', index_of_group_path
+    = link_to 'グループ', index_of_group_path, data: {"turbolinks" => false}
 
 %ul#dropdown-user.dropdown-content
   %li
@@ -28,4 +29,3 @@
             ユーザ管理
             %i.material-icons.right arrow_drop_down
 
-              

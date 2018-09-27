@@ -3,8 +3,8 @@
   %thead
     %tr
       %th{:width => "15%"} 行動
-      %th{:width => "10%"} メンバー名
-      %th{:width => "50%"} 概要
+      %th{:width => "15%"} メンバー名
+      %th{:width => "45%"} 概要
       %th{:width => "25%"} 期間
 
   %tbody
@@ -12,33 +12,32 @@
       %tr
         %td= type_to_button(schedule)
         %td= User.find(schedule.user_id).username
-        %td= schedule.content
+        %td= schedule.content.present? ? schedule.content : "特に無し"
         %td= "#{format_time(schedule.start_time)} ～ #{format_time(schedule.termination_time)}"
 
 %br
-%script{:src => "https://www.gstatic.com/charts/loader.js", :type => "text/javascript"}
+
+%script
 :javascript
+  gon.arr_for_chart.forEach(function(arr){
+      arr[2] = new Date(arr[2]);
+      arr[3] = new Date(arr[3]);
+  });
   google.charts.load("current", {packages:["timeline"], 'language': 'ja'});
   google.charts.setOnLoadCallback(drawChart);
   function drawChart() {
-    var container = document.getElementById('timeline');
+    var container = document.getElementById('timeline-group');
     var chart = new google.visualization.Timeline(container);
     var dataTable = new google.visualization.DataTable();
     dataTable.addColumn({ type: 'string', id: 'Position' });
     dataTable.addColumn({ type: 'string', id: 'Name' });
     dataTable.addColumn({ type: 'date', id: 'Start' });
-    for (arr of gon.arr_for_chart) {
-      arr[2] = new Date(arr[2]);
-      arr[3] = new Date(arr[3]);
-    }
     dataTable.addColumn({ type: 'date', id: 'End' });
-    dataTable.addRows(
-      gon.arr_for_chart
-    );
+    dataTable.addRows(gon.arr_for_chart);
     var options = {
       timeline: { singleColor: '#808080' },
       height: 200,
     };
     chart.draw(dataTable, options);
   }
-%div{:id => "timeline"}
+%div{:id => "timeline-group"}
