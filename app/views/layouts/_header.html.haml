@@ -1,4 +1,10 @@
-%ul#dropdown.dropdown-content
+%ul#dropdown-schedule.dropdown-content
+  %li
+    = link_to 'あなた', root_path
+  %li
+    = link_to 'グループ', index_of_group_path
+
+%ul#dropdown-user.dropdown-content
   %li
     = link_to 'ログアウト', destroy_user_session_path, method: :delete
   %li.divider
@@ -14,9 +20,11 @@
     - if user_signed_in?
       %ul.right
         %li
-          = link_to 'スケジュール', root_path
+          %a.dropdown-trigger{"data-target" => "dropdown-schedule", :href => "#!"}
+            スケジュール
+            %i.material-icons.right arrow_drop_down
         %li
-          %a.dropdown-trigger{"data-target" => "dropdown", :href => "#!"}
+          %a.dropdown-trigger{"data-target" => "dropdown-user", :href => "#!"}
             ユーザ管理
             %i.material-icons.right arrow_drop_down
 

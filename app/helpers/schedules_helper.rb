@@ -4,7 +4,7 @@ module SchedulesHelper
   end
 
   def format_time(time_obj)
-    time_obj.strftime('%m/%d-%H:%M')
+    time_obj.strftime('%y/%m/%d-%H:%M')
   end
 
 end

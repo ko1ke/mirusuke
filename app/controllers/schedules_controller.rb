@@ -1,9 +1,7 @@
 class SchedulesController < ApplicationController
   before_action :set_schedule, only: [:edit, :destroy]
 
-  # GET /schedules
-  # GET /schedules.json
-  def index
+  def index_of_group
     @schedules = Schedule.where(user_id: current_user.group.users)
                      .where('start_time < ? AND termination_time > ?', Date.today.end_of_day, DateTime.now)
                      .order(:termination_time)
@@ -18,6 +16,22 @@ class SchedulesController < ApplicationController
       termination_time = schedule.termination_time > Date.today.end_of_day ?
                              js_time_str(Date.today.end_of_day) : js_time_str(schedule.termination_time)
       gon.arr_for_chart << [username, type, start_time, termination_time]
+    end
+  end
+
+  # GET /schedules
+  # GET /schedules.json
+  def index
+    @schedules = Schedule.where(user_id: current_user)
+                     .where('termination_time > ?', DateTime.now)
+                     .order(:termination_time)
+    gon.arr_for_chart = []
+
+    @schedules.each do |schedule|
+      type = schedule.action_type_i18n
+      start_time = js_time_str(schedule.start_time)
+      termination_time = js_time_str(schedule.termination_time)
+      gon.arr_for_chart << [type, start_time, termination_time]
     end
   end
 
@@ -73,6 +87,5 @@ class SchedulesController < ApplicationController
   def js_time_str(datetime_obj)
     datetime_obj.to_s.gsub(/\s?\+09:?00/, '').gsub(" ", 'T')
   end
-
 
 end

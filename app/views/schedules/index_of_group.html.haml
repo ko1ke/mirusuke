@@ -1,20 +1,19 @@
-= render :partial => 'register_buttons'
-%h2 あなたのスケジュール
+%h2 #{current_user.group.name}の今日のスケジュール
 %table
   %thead
     %tr
       %th{:width => "15%"} 行動
+      %th{:width => "10%"} メンバー名
       %th{:width => "50%"} 概要
       %th{:width => "25%"} 期間
-      %th{:width => "10%"}
 
   %tbody
     - @schedules.each do |schedule|
       %tr
         %td= type_to_button(schedule)
+        %td= User.find(schedule.user_id).username
         %td= schedule.content
         %td= "#{format_time(schedule.start_time)} ～ #{format_time(schedule.termination_time)}"
-        %td= link_to '削除', schedule, method: :delete, data: { confirm: '削除しますか?' }
 
 %br
 %script{:src => "https://www.gstatic.com/charts/loader.js", :type => "text/javascript"}
@@ -25,19 +24,19 @@
     var container = document.getElementById('timeline');
     var chart = new google.visualization.Timeline(container);
     var dataTable = new google.visualization.DataTable();
+    dataTable.addColumn({ type: 'string', id: 'Position' });
     dataTable.addColumn({ type: 'string', id: 'Name' });
     dataTable.addColumn({ type: 'date', id: 'Start' });
     for (arr of gon.arr_for_chart) {
-      arr[1] = new Date(arr[1]);
       arr[2] = new Date(arr[2]);
+      arr[3] = new Date(arr[3]);
     }
     dataTable.addColumn({ type: 'date', id: 'End' });
     dataTable.addRows(
       gon.arr_for_chart
     );
     var options = {
-      timeline: { singleColor: '#808080',
-      groupByRowLabel: false  },
+      timeline: { singleColor: '#808080' },
       height: 200,
     };
     chart.draw(dataTable, options);
