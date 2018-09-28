@@ -15,11 +15,11 @@
   %li
     = link_to '招待', new_user_invitation_path
 
-%nav{class: header_color}
+%nav{class: header_color, :role => "navigation"}
   .nav-wrapper.container
-    %a#logo-container.left.brand-logo{:href => "/"}= ApplicationHelper::APP_NAME
+    %a#logo-container.brand-logo{:href => "/"}= ApplicationHelper::APP_NAME
     - if user_signed_in?
-      %ul.right
+      %ul.right.hide-on-med-and-down
         %li
           %a.dropdown-trigger{"data-target" => "dropdown-schedule", :href => "#!"}
             スケジュール
@@ -28,4 +28,20 @@
           %a.dropdown-trigger{"data-target" => "dropdown-user", :href => "#!"}
             ユーザ管理
             %i.material-icons.right arrow_drop_down
+      %ul#nav-mobile.sidenav
+        %li
+          = link_to 'あなたのスケジュール', root_path, data: {"turbolinks" => false}
+        %li
+          = link_to 'グループのスケジュール', index_of_group_path, data: {"turbolinks" => false}
+        %li.divider
+        %li
+          = link_to 'ログアウト', destroy_user_session_path, method: :delete
+        %li.divider
+        %li
+          = link_to 'プロフィール', edit_user_registration_path, data: {"turbolinks" => false}
+        %li.divider
+        %li
+          = link_to '招待', new_user_invitation_path, data: {"turbolinks" => false}
+      %a.sidenav-trigger{"data-target" => "nav-mobile", :href => "#"}
+        %i.material-icons menu
 
