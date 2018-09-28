@@ -12,6 +12,14 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'https://www.gstatic.com/charts/loader.js'
 
+    -# pollyfill
+    = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"
+    = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"
+    = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"
+    = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.2/es6-shim.min.js"
+    = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.2/es6-sham.min.js"
+    = javascript_include_tag "https://wzrd.in/standalone/es7-shim@latest"
+
   %body
     = render("layouts/header")
     .container
