@@ -10,19 +10,19 @@
 }
 
 h1 {
-  font-size: 2.5rem !important;
-}
-
-h2 {
   font-size: 2rem !important;
 }
 
-h3 {
+h2 {
   font-size: 1.75rem !important;
 }
 
-h4 {
+h3 {
   font-size: 1.5rem !important;
+}
+
+h4 {
+  font-size: 1.25rem !important;
 }
 
 .inline-date {
@@ -74,6 +74,53 @@ h4 {
   margin: 0 5px;
 }
 
+@media screen and (max-width: 480px) {
+  .go_out-btn {
+    .material-icons {
+      display: none;
+    }
+  }
+  .meeting-btn {
+    .material-icons {
+      display: none;
+    }
+  }
+  .vacation-btn {
+    .material-icons {
+      display: none;
+    }
+  }
+  .early_leaving-btn {
+    .material-icons {
+      display: none;
+    }
+  }
+}
+
+.go_out-label {
+  @extend .btn;
+  @extend .go_out-color;
+  @include label;
+}
+
+.meeting-label {
+  @extend .btn;
+  @extend .meeting-color;
+  @include label;
+}
+
+.vacation-label {
+  @extend .btn;
+  @extend .vacation-color;
+  @include label;
+}
+
+.early_leaving-label {
+  @extend .btn;
+  @extend .early_leaving-color;
+  @include label;
+}
+
 .submit-btn {
   color: white;
   @extend .waves-light;
@@ -90,33 +137,13 @@ h4 {
   @extend .darken-4;
 }
 
-.go_out-label {
-  @extend .go_out-btn;
-  @include label;
-}
-
-.meeting-label {
-  @extend .meeting-btn;
-  @include label;
-}
-
-.vacation-label {
-  @extend .vacation-btn;
-  @include label;
-}
-
-.early_leaving-label {
-  @extend .early_leaving-btn;
-  @include label;
-}
-
 #error_explanation {
   padding: 0.5em 1em;
   margin: 2em 0;
   @extend .red;
   @extend .lighten-4;
   @extend .card-panel;
-  h2{
+  h2 {
     margin: 1rem 0 1rem 0;
   }
 }
@@ -130,9 +157,8 @@ h4 {
   padding-top: 6px;
 }
 
-
-#toast-container{
-  .toast{
+#toast-container {
+  .toast {
     padding: 15px 30px;
   }
 }

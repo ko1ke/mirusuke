@@ -1,7 +1,7 @@
 %h2 スケジュール登録
 %br
 .row
-  .col.s12
+  .col.l12
     = link_to new_schedule_path(:action_type => Schedule.action_types.keys[0]), class: 'go_out-btn', remote: false, method: :get do
       %i.material-icons.left> flight_takeoff
       外出

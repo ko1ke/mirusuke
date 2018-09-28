@@ -36,12 +36,9 @@
         %li.divider
         %li
           = link_to 'ログアウト', destroy_user_session_path, method: :delete
-        %li.divider
         %li
           = link_to 'プロフィール', edit_user_registration_path, data: {"turbolinks" => false}
-        %li.divider
         %li
           = link_to '招待', new_user_invitation_path, data: {"turbolinks" => false}
       %a.sidenav-trigger{"data-target" => "nav-mobile", :href => "#"}
         %i.material-icons menu
-
