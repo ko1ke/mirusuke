@@ -1,11 +1,11 @@
 %h2 #{current_user.group.name}の今日のスケジュール
-%table
+%table.responsive-table
   %thead
     %tr
-      %th{:width => "15%"} 行動
-      %th{:width => "15%"} 名前
-      %th{:width => "45%"} 概要
-      %th{:width => "25%"} 期間
+      %th 行動
+      %th 名前
+      %th 概要
+      %th 期間
 
   %tbody
     - @schedules.each do |schedule|

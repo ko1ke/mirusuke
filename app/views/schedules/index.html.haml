@@ -1,12 +1,12 @@
 = render :partial => 'register_buttons'
 %h2 あなたの進行中のスケジュール
-%table
+%table.responsive-table
   %thead
     %tr
-      %th{:width => "15%"} 行動
-      %th{:width => "50%"} 概要
-      %th{:width => "25%"} 期間
-      %th{:width => "10%"}
+      %th 行動
+      %th 概要
+      %th 期間
+      %th 
 
   %tbody
     - @schedules.each do |schedule|
