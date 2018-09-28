@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="38409bc4-5801-40dd-be07-50a5d828e4b6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/schedules/_form.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/schedules/_form.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/shared/_links.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.html.haml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/schedules/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/schedules/index.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/schedules/index_of_group.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/schedules/index_of_group.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memo.md" beforeDir="false" afterPath="$PROJECT_DIR$/memo.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -64,16 +64,16 @@
     <session id="1805086100">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.19" value="2" />
+          <entry key="project.open.time.19" value="3" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="5" />
-          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.7" value="7" />
+          <entry key="project.open.time.8" value="4" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -87,7 +87,7 @@
           <entry key="jsx" value="68" />
           <entry key="lock" value="3" />
           <entry key="log" value="1" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="rb" value="26" />
           <entry key="scss" value="5" />
           <entry key="yml" value="4" />
@@ -99,7 +99,7 @@
           <entry key="Haml" value="66" />
           <entry key="JSX Harmony" value="68" />
           <entry key="JavaScript" value="8" />
-          <entry key="Markdown" value="1" />
+          <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Ruby" value="34" />
           <entry key="SCSS" value="5" />
@@ -114,7 +114,7 @@
           <entry key="haml" value="1556" />
           <entry key="js" value="21" />
           <entry key="jsx" value="808" />
-          <entry key="md" value="41" />
+          <entry key="md" value="139" />
           <entry key="rb" value="1101" />
           <entry key="scss" value="87" />
           <entry key="yml" value="139" />
@@ -126,7 +126,7 @@
           <entry key="Haml" value="1501" />
           <entry key="JSX Harmony" value="808" />
           <entry key="JavaScript" value="76" />
-          <entry key="Markdown" value="41" />
+          <entry key="Markdown" value="139" />
           <entry key="Ruby" value="1125" />
           <entry key="SCSS" value="87" />
           <entry key="YAML" value="139" />
@@ -187,20 +187,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/schedules/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            <state relative-caret-position="252">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/schedules/index_of_group.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/memo.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="43">
+                <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -234,6 +237,7 @@
       <find>submit</find>
       <find>sign</find>
       <find>error</find>
+      <find>未登録ですか？　まずは登録しましょう！</find>
     </findStrings>
     <replaceStrings>
       <replace>start_time</replace>
@@ -252,7 +256,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20180925065645_change_termination_time_on_schedules.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180925070918_add_start_time_to_schedules.rb" />
         <option value="$PROJECT_DIR$/app/models/group.rb" />
-        <option value="$PROJECT_DIR$/memo.md" />
         <option value="$PROJECT_DIR$/config/locales/ja.yml" />
         <option value="$PROJECT_DIR$/app/javascript/packs/hello_react.jsx" />
         <option value="$PROJECT_DIR$/app/javascript/TimeSettingSelector/ArbitraryType.jsx" />
@@ -297,6 +300,7 @@
         <option value="$PROJECT_DIR$/app/views/schedules/index_of_group.html.haml" />
         <option value="$PROJECT_DIR$/app/views/schedules/_form.html.haml" />
         <option value="$PROJECT_DIR$/app/views/schedules/index.html.haml" />
+        <option value="$PROJECT_DIR$/memo.md" />
       </list>
     </option>
   </component>
@@ -315,8 +319,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="414" />
-    <option name="y" value="585" />
+    <option name="x" value="598" />
+    <option name="y" value="311" />
     <option name="width" value="1102" />
     <option name="height" value="820" />
   </component>
@@ -361,6 +365,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/devise/sessions/new.html.haml&#10;applicatio&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/assets/javascripts/application.js&#10;header&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/layouts/_header.html.haml&#10;app&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/layouts/application.html.haml&#10;produ&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/config/environments/production.rb&#10;flash&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/layouts/_flash.html.haml&#10;schedule&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/models/schedule.rb&#10;application&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/layouts/application.html.haml&#10;gem&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/Gemfile&#10;appli&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/layouts/application.html.haml&#10;schedule con&#9;null&#9;null&#10;schedule.rb&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/models/schedule.rb&#10;sche&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/db/schema.rb&#10;index&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/schedules/index.html.haml&#10;custom&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/assets/stylesheets/custom.scss" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../everydayrails-rspec-2017" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -569,18 +574,22 @@
       <workItem from="1538036393746" duration="2226000" />
       <workItem from="1538038872262" duration="23000" />
       <workItem from="1538093075717" duration="1200000" />
-      <workItem from="1538094747414" duration="13361000" />
+      <workItem from="1538094747414" duration="14712000" />
+      <workItem from="1538113578470" duration="1248000" />
+      <workItem from="1538115046657" duration="418000" />
+      <workItem from="1538115804661" duration="16000" />
+      <workItem from="1538116889006" duration="271000" />
+      <workItem from="1538118300423" duration="332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119663000" />
+    <option name="totallyTimeSpent" value="123299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49760765" visible="true" weight="0.22707888" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49760765" visible="true" weight="0.25053304" />
       <window_info id="Structure" order="1" sideWeight="0.50239235" side_tool="true" weight="0.24043368" />
       <window_info id="Favorites" order="2" sideWeight="0.50127226" side_tool="true" weight="0.21908316" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -631,7 +640,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/javascript/TerminationTimeSetting/StartTimeSetting" />
     <entry file="file://$PROJECT_DIR$/app/javascript/timesettingselector/index.jsx" />
     <entry file="file://$PROJECT_DIR$/app/javascript/StartTimeSetting/AllAmType.jsx" />
     <entry file="file://$PROJECT_DIR$/app/javascript/TerminationTimeSetting/AllAmType.jsx">
@@ -898,10 +906,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -912,10 +920,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -935,8 +943,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/schedules/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        <state relative-caret-position="252">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memo.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="43">
+            <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

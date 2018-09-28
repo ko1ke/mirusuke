@@ -2,10 +2,10 @@ import React from 'react'
 
 let getOptionsWithPaddingZero = (numArr, keyPrefix) => {
   let arr = [];
-  for (let num of numArr) {
+  numArr.forEach (function(num) {
     let index = ('00' + String(num)).slice(-2);
     arr.push(<option key={keyPrefix + index} value={index}>{index}</option>);
-  }
+  });
   return arr;
 };
 
