@@ -1,46 +1,54 @@
 = render :partial => 'register_buttons'
 %h2 あなたの進行中のスケジュール
-%table.responsive-table
-  %thead
-    %tr
-      %th 行動
-      %th 概要
-      %th 期間
-      %th
 
-  %tbody
-    - @schedules.each do |schedule|
+- if @schedules.exists?
+
+  %table.responsive-table
+    %thead
       %tr
-        %td= type_to_button(schedule)
-        %td= schedule.content.present? ? schedule.content : "特に無し"
-        %td= "#{format_time(schedule.start_time)} ～ #{format_time(schedule.termination_time)}"
-        %td= link_to '削除', schedule, method: :delete, data: { confirm: '削除しますか?' }
+        %th 行動
+        %th 概要
+        %th 期間
+        %th
 
-%br
+    %tbody
+      - @schedules.each do |schedule|
+        %tr
+          %td= type_to_button(schedule)
+          %td= schedule.content.present? ? schedule.content : "特に無し"
+          %td= "#{format_time(schedule.start_time)} ～ #{format_time(schedule.termination_time)}"
+          %td= link_to '削除', schedule, method: :delete, data: { confirm: '削除しますか?' }
 
-%script
-:javascript
-  gon.arr_for_chart.forEach(function(arr){
-      arr[2] = new Date(arr[2]);
-      arr[3] = new Date(arr[3]);
-  });
-  google.charts.load("current", {packages:["timeline"], 'language': 'ja'});
-  google.charts.setOnLoadCallback(drawChart);
-  function drawChart() {
-    var container = document.getElementById('timeline');
-    var chart = new google.visualization.Timeline(container);
-    var dataTable = new google.visualization.DataTable();
-    dataTable.addColumn({ type: 'string', id: 'Position' });
-    dataTable.addColumn({ type: 'string', id: 'Name' });
-    dataTable.addColumn({ type: 'date', id: 'Start' });
-    dataTable.addColumn({ type: 'date', id: 'End' });
-    dataTable.addRows(gon.arr_for_chart);
-    var options = {
-      timeline: { singleColor: '#808080',
-      groupByRowLabel: false  },
-      height: 200,
-    };
-    chart.draw(dataTable, options);
-  }
+  %br
 
-%div{:id => "timeline"}
+  %script
+  :javascript
+    gon.arr_for_chart.forEach(function(arr){
+        arr[2] = new Date(arr[2]);
+        arr[3] = new Date(arr[3]);
+    });
+
+    google.charts.load("current", {packages:["timeline"], 'language': 'ja'});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var container = document.getElementById('timeline');
+      var chart = new google.visualization.Timeline(container);
+      var dataTable = new google.visualization.DataTable();
+      dataTable.addColumn({ type: 'string', id: 'Position' });
+      dataTable.addColumn({ type: 'string', id: 'Name' });
+      dataTable.addColumn({ type: 'date', id: 'Start' });
+      dataTable.addColumn({ type: 'date', id: 'End' });
+      dataTable.addRows(gon.arr_for_chart);
+      var options = {
+        timeline: { singleColor: '#808080',
+        groupByRowLabel: false  },
+      };
+      chart.draw(dataTable, options);
+    }
+
+  %div{:id => "timeline", :style => "height: #{@schedules.length * 30 + 120}px;"}
+
+- else
+  %p スケジュールがまだありません
+
+

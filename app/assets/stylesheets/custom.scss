@@ -126,6 +126,7 @@ h4 {
   @extend .waves-light;
   @extend .btn;
   @extend .waves-effect;
+  width: 100%;
 }
 
 .sign-up-btn {
@@ -135,6 +136,7 @@ h4 {
   @extend .waves-effect;
   @extend .orange;
   @extend .darken-4;
+  width: 100%;
 }
 
 #error_explanation {
