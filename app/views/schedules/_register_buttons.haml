@@ -1,6 +1,6 @@
 %h2 スケジュール登録
 %br
-.row
+.row.division-boarder
   .col.l12
     = link_to new_schedule_path(:action_type => Schedule.action_types.keys[0]), class: 'go_out-btn', remote: false, method: :get do
       %i.material-icons.left> flight_takeoff
@@ -17,5 +17,8 @@
     = link_to new_schedule_path(:action_type => Schedule.action_types.keys[3]), class: 'early_leaving-btn', remote: false, method: :get do
       %i.material-icons.left> directions_run
       早退
-%br
-%hr
+
+  %br
+  %br
+  %br
+

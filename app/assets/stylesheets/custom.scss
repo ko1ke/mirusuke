@@ -11,18 +11,27 @@
 
 h1 {
   font-size: 2rem !important;
+  font-weight: 500 !important;
 }
 
 h2 {
-  font-size: 1.75rem !important;
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
 }
 
 h3 {
-  font-size: 1.5rem !important;
+  font-size: 1.25rem !important;
+  font-weight: 500 !important;
 }
 
 h4 {
-  font-size: 1.25rem !important;
+  font-size: 1.10rem !important;
+  font-weight: 500 !important;
+}
+
+.division-boarder {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+  padding-bottom: 20px;
 }
 
 .inline-date {
@@ -51,27 +60,27 @@ h4 {
 }
 
 .go_out-btn {
-  @extend .btn;
   @extend .go_out-color;
   margin: 0 5px;
+  @extend .btn;
 }
 
 .meeting-btn {
-  @extend .btn;
   @extend .meeting-color;
   margin: 0 5px;
+  @extend .btn;
 }
 
 .vacation-btn {
-  @extend .btn;
   @extend .vacation-color;
   margin: 0 5px;
+  @extend .btn;
 }
 
 .early_leaving-btn {
-  @extend .btn;
   @extend .early_leaving-color;
   margin: 0 5px;
+  @extend .btn;
 }
 
 @media screen and (max-width: 480px) {
@@ -155,6 +164,17 @@ h4 {
   @extend .lighten-4;
 }
 
+.catch {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.intro-icon {
+  min-width: 25%;
+  height: auto;
+  padding-bottom: 10px;
+}
+
 #time-setting-component {
   padding-top: 6px;
 }
@@ -164,3 +184,5 @@ h4 {
     padding: 15px 30px;
   }
 }
+
+

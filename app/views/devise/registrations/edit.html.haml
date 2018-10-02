@@ -1,33 +1,42 @@
-%h2
-  ユーザ編集
-= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
-  = devise_error_messages!
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true, autocomplete: "email"
-  - if devise_mapping.confirmable? && resource.pending_reconfirmation?
-    %div
-      Currently waiting confirmation for: #{resource.unconfirmed_email}
-  .field
-    = f.label :password
-    (変更しない場合は入力不要)
+.row
+  .col.s12.m5.offset-m1
+    %h2
+      ユーザ編集
+    = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+      = devise_error_messages!
+      .field
+        = f.label :username
+        %br/
+        = f.text_field :username, autofocus: true, autocomplete: "username"
 
-    = f.password_field :password, autocomplete: "new-password"
+      .field
+        = f.label :email
+        %br/
+        = f.email_field :email, autofocus: true, autocomplete: "email"
+      - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+        %div
+          Currently waiting confirmation for: #{resource.unconfirmed_email}
+      .field
+        = f.label :password
+        (変更しない場合は入力不要)
 
-  .field
-    = f.label :password_confirmation
-    %br/
-    = f.password_field :password_confirmation, autocomplete: "new-password"
-  .field
-    = f.label :current_password
-    (変更する場合は要入力)
-    %br/
-    = f.password_field :current_password, autocomplete: "current-password"
-  %br
-  .actions
-    = f.submit "更新", class: "submit-btn"
-%br
-%h3 退会
-%p
-  退会しますか? #{button_to "退会する", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class:  "submit-btn red"}
+        = f.password_field :password, autocomplete: "new-password"
+
+      .field
+        = f.label :password_confirmation
+        %br/
+        = f.password_field :password_confirmation, autocomplete: "new-password"
+      .field
+        = f.label :current_password
+        (変更する場合は要入力)
+        %br/
+        = f.password_field :current_password, autocomplete: "current-password"
+      %br
+      .actions
+        = f.submit "更新", class: "submit-btn"
+    %br
+
+  .col.s12.m5.offset-m1
+    %h3 退会
+    %p
+      退会しますか? #{button_to "退会する", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class:  "submit-btn red"}

@@ -1,22 +1,65 @@
-%h2 ログイン
-= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true, autocomplete: "email"
-  .field
-    = f.label :password
-    %br/
-    = f.password_field :password, autocomplete: "current-password"
-  - if devise_mapping.rememberable?
-    .field
-      %label{:for => "user_remember_me"}
-        = f.check_box :remember_me
-        %span ユーザーを記憶する
-  %br/
-  .actions
-    = f.submit "ログイン", class: "submit-btn"
-  %br/
+.row.division-boarder
+  %h2
+    在席管理
+    %small を少し便利に &mdash; #{ApplicationHelper::APP_NAME}
 
-%h2 登録はこちら
-= render "devise/shared/links"
+.row.division-boarder
+  .col.s12.m6
+    %h3.under-line ログイン
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+      .field
+        = f.label :email
+        %br/
+        = f.email_field :email, autofocus: true, autocomplete: "email"
+      .field
+        = f.label :password
+        %br/
+        = f.password_field :password, autocomplete: "current-password"
+      - if devise_mapping.rememberable?
+        .field
+          %label{:for => "user_remember_me"}
+            = f.check_box :remember_me
+            %span ユーザーを記憶する
+      %br/
+      .actions
+        = f.submit "ログイン", class: "submit-btn"
+      %br/
+
+
+  .col.s12.m4.offset-m1
+    %h3 登録はこちら
+    = render "devise/shared/links"
+
+.row.catch
+  .col.s12.m4.offset-m1
+    = image_tag('timeline_bars', class: 'intro-icon')
+    %h3 グラフでわかりやすく
+    %p 設定したスケジュールに合わせて、タイムラインチャートが自動生成されます
+  .col.s12.m4.offset-m1
+    = image_tag('hand-gesture', class: 'intro-icon')
+    %h3 いつでもどこでも
+    %p スマートフォンでの閲覧にも対応。出先でも気軽にアクセスできます。
+
+.row.catch.division-boarder
+  .col.s12.m4.offset-m1
+    = image_tag('group', class: 'intro-icon')
+    %h3 グループで情報共有
+    %p 他ユーザーをグループに招待すると、グループ内の全メンバーのスケジュールを閲覧できるようになります。
+
+  .col.s12.m4.offset-m1
+    = image_tag('eye-on-file', class: 'intro-icon')
+    %h3 終わったら非表示に
+    %p 完了したスケジュールは表示されなくなるため、わざわざ手作業で削除する必要はありません。
+
+.row
+  %h2
+    %i{:class => 'material-icons', :style => " position: relative;top: 5px;left: 5px;"} info
+    インフォメーション
+  %h3 スケジュールの表示について
+  %p スケジュールの表示は個人とグループの２種類があります。それぞれで表示する日程の範囲が若干異なります。
+  %ul
+    %li 個人：「未完了の」スケジュールすべてを表示。自動マージはしない。
+    %li グループ：グループメンバーの「当日のみ」のスケジュールを表示。個人のスケジュールを可能な限り１行に自動マージ。
+
+  %h3 グループについて
+  %p 同じグループに招待するには招待機能を使います。ユーザー登録の際、入りたいグループ名を指定して登録したとしても、同じグループには入れません。
