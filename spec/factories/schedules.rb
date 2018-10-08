@@ -14,8 +14,10 @@
 
 FactoryBot.define do
   factory :schedule do
-    content { "MyString" }
-    action_type { 1 }
-    termination_time { "2018-09-11 17:17:32" }
+    content {"My schedule"}
+    action_type {1}
+    user_id {1}
+    start_time {DateTime.now + 1.0/24}
+    termination_time {DateTime.now + 2.0/24}
   end
 end

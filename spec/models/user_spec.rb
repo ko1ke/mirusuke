@@ -25,5 +25,19 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  describe "create user" do
+    let(:group) { FactoryBot.create(:group) }
+
+    it "is valid with a group" do
+      user = FactoryBot.build(:user, group: group)
+      expect(user).to be_valid
+    end
+
+    it "is invalid without a group" do
+      user = FactoryBot.build(:user, group: nil)
+      expect(user).to_not be_valid
+      expect(user.errors[:group_id]).to include("を入力してください")
+    end
+  end
 end
