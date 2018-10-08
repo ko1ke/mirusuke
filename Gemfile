@@ -35,7 +35,11 @@ gem 'gon', '~> 6.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :development, :test do
+group :test do
+  gem 'capybara', '~> 2.15.4'
+  gem 'selenium-webdriver'
+  gem 'poltergeist', '~> 1.15.0'
+  gem 'launchy', '~> 2.4.3'
   gem 'rspec-rails'
   gem 'factory_bot_rails'
   gem 'rails-controller-testing'
@@ -56,8 +60,9 @@ group :development do
   gem 'rails-erd'
   gem 'bullet'
   gem 'rack-mini-profiler'
-  gem 'letter_opener'
+  # gem 'letter_opener'
   gem 'letter_opener_web'
+  gem 'spring-commands-rspec'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
