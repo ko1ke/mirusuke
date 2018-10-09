@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.feature "Users", type: :feature do
-  scenario "rejects incorrect password login" do
+  scenario "rejects incorrect password login", js: true do
     group = FactoryBot.create(:group)
     user = FactoryBot.create(:user, group: group)
 
@@ -9,6 +9,7 @@ RSpec.feature "Users", type: :feature do
     fill_in "Eメール", with: user.email
     fill_in "パスワード", with: "1"
     click_button "ログイン"
+
     expect(page).to have_text("パスワードが不正")
     expect(page).to have_current_path "/users/sign_in"
   end

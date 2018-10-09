@@ -1,5 +1,12 @@
 require 'rails_helper'
 
 RSpec.feature "Schedules", type: :feature do
-  scenario "user creates a new project"
+  include LoginSupport
+  # let(:group) {FactoryBot.create(:group)}
+  # let(:user) {FactoryBot.create(:user, group: group)}
+  #
+  # scenario "user creates a new schedule", js: true do
+  #   sign_in_as(user)
+  #   click_link "外出"
+  # end
 end
