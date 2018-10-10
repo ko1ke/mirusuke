@@ -42,18 +42,18 @@ class TimeSettingSelector extends React.Component {
 
       <div className="field">
         <label>
-          <input name="start_time-group" value="recent" onChange={this.onTypeSelected} type="radio"
+          <input name="start_time-group" value="recent" id="start_time-recent" onChange={this.onTypeSelected} type="radio"
                  defaultChecked/>
           <span>直近</span>
         </label>
         <br/>
         <label>
-          <input name="start_time-group" value="first-morning" onChange={this.onTypeSelected} type="radio"/>
+          <input name="start_time-group" value="first-morning" id="start_time-first-morning" onChange={this.onTypeSelected} type="radio"/>
           <span>朝一</span>
         </label>
         <br/>
         <label>
-          <input name="start_time-group" value="first-afternoon" onChange={this.onTypeSelected} type="radio"/>
+          <input name="start_time-group" value="first-afternoon" id="first-morning-first-afternoon" onChange={this.onTypeSelected} type="radio"/>
           <span>午後一</span>
         </label>
         <br/>

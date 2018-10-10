@@ -39,6 +39,7 @@ group :test do
   gem 'capybara', '~> 2.15.4'
   gem 'selenium-webdriver'
   gem 'poltergeist', '~> 1.15.0'
+  gem 'chromedriver-helper'
   gem 'launchy', '~> 2.4.3'
   gem 'rspec-rails'
   gem 'factory_bot_rails'
