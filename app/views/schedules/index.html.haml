@@ -21,31 +21,6 @@
 
   %br
 
-  %script
-  :javascript
-    gon.arr_for_chart.forEach(function(arr){
-        arr[2] = new Date(arr[2]);
-        arr[3] = new Date(arr[3]);
-    });
-
-    google.charts.load("current", {packages:["timeline"], 'language': 'ja'});
-    google.charts.setOnLoadCallback(drawChart);
-    function drawChart() {
-      var container = document.getElementById('timeline');
-      var chart = new google.visualization.Timeline(container);
-      var dataTable = new google.visualization.DataTable();
-      dataTable.addColumn({ type: 'string', id: 'Position' });
-      dataTable.addColumn({ type: 'string', id: 'Name' });
-      dataTable.addColumn({ type: 'date', id: 'Start' });
-      dataTable.addColumn({ type: 'date', id: 'End' });
-      dataTable.addRows(gon.arr_for_chart);
-      var options = {
-        timeline: { singleColor: '#808080',
-        groupByRowLabel: false  },
-      };
-      chart.draw(dataTable, options);
-    }
-
   %div{:id => "timeline", :style => "height: #{@schedules.length * 30 + 120}px;"}
 
 - else
