@@ -3,10 +3,12 @@
 // of the page.
 
 import React from 'react'
-import ReactDOM from 'react-dom'
 import StartTimeSetting from 'StartTimeSetting'
 
-document.addEventListener('turbolinks:load', () => {
-  let element = document.getElementById("start-time-setting");
-  ReactDOM.render(<StartTimeSetting />, element);
-});
+export default class StartTime extends React.Component {
+  render() {
+    return (
+      <StartTimeSetting />
+    );
+  }
+}

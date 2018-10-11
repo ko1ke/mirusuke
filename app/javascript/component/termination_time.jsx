@@ -3,10 +3,12 @@
 // of the page.
 
 import React from 'react'
-import ReactDOM from 'react-dom'
 import TerminationTimeSetting from 'TerminationTimeSetting'
 
-document.addEventListener('turbolinks:load', () => {
-  let element = document.getElementById("termination-time-setting");
-  ReactDOM.render(<TerminationTimeSetting />, element);
-});
+export default class TerminationTime extends React.Component {
+  render() {
+    return (
+      <TerminationTimeSetting />
+    );
+  }
+}

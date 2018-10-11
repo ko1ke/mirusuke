@@ -17,13 +17,14 @@
   .field
     = f.label :start_time, '開始時間'
     %br
-    #start-time-setting
+    = react_component("StartTime")
 
   %br
   .field
     = f.label :termination_time, '終了時間'
     %br
-    #termination-time-setting
+    = react_component("TerminationTime")
+
   %br
   .actions
     = f.submit '保存', class: 'submit-btn', data: {"turbolinks" => false}
