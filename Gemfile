@@ -29,8 +29,11 @@ gem 'enum_help'
 gem 'devise', '~> 4.2'
 gem 'devise_invitable', '~> 1.7.0'
 
+# Front end
 gem 'webpacker', '~> 3.0'
 gem 'gon', '~> 6.2'
+gem 'react_on_rails', '11.1.4'
+gem 'mini_racer', platforms: :ruby
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -38,7 +41,6 @@ gem 'gon', '~> 6.2'
 group :test do
   gem 'capybara', '~> 2.15.4'
   gem 'selenium-webdriver'
-  gem 'poltergeist', '~> 1.15.0'
   gem 'chromedriver-helper'
   gem 'launchy', '~> 2.4.3'
   gem 'rspec-rails'
