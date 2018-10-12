@@ -1,0 +1,1 @@
+json.array! @users, partial: 'schedules/each_one', as: :each_one

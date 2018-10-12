@@ -11,6 +11,7 @@
 import ReactOnRails from 'react-on-rails';
 import StartTime from '../component/start_time';
 import TerminationTime from '../component/termination_time';
+import Search from '../component/search';
 
 ReactOnRails.register({
   StartTime
@@ -20,3 +21,6 @@ ReactOnRails.register({
   TerminationTime
 });
 
+ReactOnRails.register({
+  Search
+});

@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   resources :schedules, only: [:index, :new, :create, :destroy]
   get 'schedules/index_of_group', to: 'schedules#index_of_group', as: 'index_of_group'
 
+  get '/search', to: 'search#index'
+
   mount LetterOpenerWeb::Engine, at: '/letter_opener' if Rails.env.development?
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

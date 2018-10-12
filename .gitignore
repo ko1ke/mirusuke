@@ -23,5 +23,5 @@
 yarn-debug.log*
 .yarn-integrity
 /.vs/
-/.idea/workspace.xml
+.idea/workspace.xml
 /.idea/
