@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38409bc4-5801-40dd-be07-50a5d828e4b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/search_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/component/search.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/schedules/_each_one.json.builder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/schedules/show.html.haml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/search/index.json.builder" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/component/searchResult.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/component/searchResultList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/packs/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/packs/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/schedules/index_of_group.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/schedules/index_of_group.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/component/search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/component/search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/schedules/_each_one.json.builder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/schedules/_each_one.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/search/index.json.builder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/search/index.json.jbuilder" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -24,7 +22,6 @@
     <ignored path="$PROJECT_DIR$/vendor/bundle/" />
     <ignored path="$PROJECT_DIR$/vendor/cache/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -327,55 +324,163 @@
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.lifecycle.project" />
     </session>
+    <session id="1570411892">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1780375384">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="Gemfile" value="1" />
+          <entry key="builder" value="2" />
+          <entry key="haml" value="2" />
+          <entry key="jsx" value="9" />
+          <entry key="rb" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Haml" value="2" />
+          <entry key="JSX Harmony" value="9" />
+          <entry key="RXML" value="2" />
+          <entry key="Ruby" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="jbuilder" value="11" />
+          <entry key="jsx" value="800" />
+          <entry key="rb" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JSX Harmony" value="800" />
+          <entry key="Ruby" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.actions.runAnything" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.vcs.git.usages" />
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="wru" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="search.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/javascript/component/search.jsx">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/schedules/_each_one.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+            <state relative-caret-position="42">
+              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_each_one.json.builder" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/schedules/_each_one.json.builder">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.json.builder" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/search/index.json.builder">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/schedules/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="26" selection-start-column="26" selection-end-column="26" />
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/schedules/new.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/javascript/component/start_time.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+              <folding>
+                <element signature="e#228#253#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/javascript/StartTimeSetting/index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/search/index.json.jbuilder">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/javascript/component/search.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/schedules_controller.rb">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>propTypes</find>
-      <find>PropTypes</find>
-      <find>console</find>
       <find>TimeSettingSelector</find>
       <find>termination_time</find>
       <find>termination</find>
@@ -403,6 +508,9 @@
       <find>style</find>
       <find>format_time</find>
       <find>import ReactOnRails</find>
+      <find>divide</find>
+      <find>results</find>
+      <find>jbuilder</find>
     </findStrings>
     <replaceStrings>
       <replace>start_time</replace>
@@ -415,9 +523,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/schedules_controller.rb" />
-        <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
-        <option value="$PROJECT_DIR$/app/views/devise/mailer/invitation_instructions.text.haml" />
         <option value="$PROJECT_DIR$/config/locales/devise_invitable.en.yml" />
         <option value="$PROJECT_DIR$/app/views/devise/mailer/invitation_instructions.html.haml" />
         <option value="$PROJECT_DIR$/config/locales/devise_invitable.ja.yml" />
@@ -458,14 +563,17 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/schedules.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/search_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/search/index.json.builder" />
         <option value="$PROJECT_DIR$/app/views/schedules/show.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" />
         <option value="$PROJECT_DIR$/app/views/schedules/index_of_group.html.haml" />
-        <option value="$PROJECT_DIR$/app/javascript/component/search.jsx" />
         <option value="$PROJECT_DIR$/app/views/schedules/_each_one.json.builder" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/javascript/component/searchResult.jsx" />
+        <option value="$PROJECT_DIR$/app/javascript/component/searchResultList.jsx" />
+        <option value="$PROJECT_DIR$/app/javascript/component/search.jsx" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/schedules/_each_one.json.jbuilder" />
       </list>
     </option>
   </component>
@@ -483,17 +591,19 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="380" />
-    <option name="y" value="577" />
-    <option name="width" value="1170" />
-    <option name="height" value="559" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="471" />
+    <option name="y" value="147" />
+    <option name="width" value="1394" />
+    <option name="height" value="857" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -562,14 +672,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="custom&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Desktop/!!!Workspace!!!/wru/app/assets/stylesheets/custom.scss&#10;mani&#9;FILE&#9;file:///home/koike/Desktop/!!!Workspace!!!/wru/app/assets/config/manifest.js&#10;manifest.json&#9;FILE&#9;file:///home/koike/Desktop/!!!Workspace!!!/wru/public/packs-test/manifest.json&#10;appli&#9;FILE&#9;file:///home/koike/Desktop/!!!Workspace!!!/wru/app/views/layouts/application.html.haml&#10;ge&#9;FILE&#9;file:///home/koike/Desktop/!!!Workspace!!!/wru/Gemfile&#10;application&#9;FILE&#9;file:///home/koike/Desktop/!!!Workspace!!!/wru/app/views/layouts/application.html.haml&#10;gem&#9;FILE&#9;file:///home/keke/Desktop/Dropbox/dev/wru/Gemfile&#10;application.js&#9;FILE&#9;file:///home/keke/Desktop/Dropbox/dev_private/wru/app/javascript/packs/application.js&#10;app&#9;FILE&#9;file:///home/keke/Desktop/Dropbox/dev_private/wru/app/assets/javascripts/application.js&#10;applicatio&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/assets/javascripts/application.js&#10;header&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/layouts/_header.html.haml&#10;produ&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/config/environments/production.rb&#10;flash&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/layouts/_flash.html.haml&#10;schedule&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/models/schedule.rb&#10;schedule con&#9;null&#9;null&#10;schedule.rb&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/models/schedule.rb&#10;sche&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/db/schema.rb&#10;index&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/schedules/index.html.haml" />
+    <property name="SearchEverywhereHistoryKey" value="gem&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Desktop/WORKSPACE/wru/Gemfile&#10;custom&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Desktop/!!!Workspace!!!/wru/app/assets/stylesheets/custom.scss&#10;mani&#9;FILE&#9;file:///home/koike/Desktop/!!!Workspace!!!/wru/app/assets/config/manifest.js&#10;manifest.json&#9;FILE&#9;file:///home/koike/Desktop/!!!Workspace!!!/wru/public/packs-test/manifest.json&#10;appli&#9;FILE&#9;file:///home/koike/Desktop/!!!Workspace!!!/wru/app/views/layouts/application.html.haml&#10;ge&#9;FILE&#9;file:///home/koike/Desktop/!!!Workspace!!!/wru/Gemfile&#10;application&#9;FILE&#9;file:///home/koike/Desktop/!!!Workspace!!!/wru/app/views/layouts/application.html.haml&#10;application.js&#9;FILE&#9;file:///home/keke/Desktop/Dropbox/dev_private/wru/app/javascript/packs/application.js&#10;app&#9;FILE&#9;file:///home/keke/Desktop/Dropbox/dev_private/wru/app/assets/javascripts/application.js&#10;applicatio&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/assets/javascripts/application.js&#10;header&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/layouts/_header.html.haml&#10;produ&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/config/environments/production.rb&#10;flash&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/layouts/_flash.html.haml&#10;schedule&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/models/schedule.rb&#10;schedule con&#9;null&#9;null&#10;schedule.rb&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/models/schedule.rb&#10;sche&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/db/schema.rb&#10;index&#9;FILE&#9;file://C:/Users/kkoike.DAIKO/Dropbox/dev_private/wru/app/views/schedules/index.html.haml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/dev_private/app-garage" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RecentsManager">
@@ -619,6 +727,7 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method v="2" />
     </configuration>
     <configuration name="Production: wru" type="RailsRunConfigurationType" factoryName="Rails">
       <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
@@ -642,6 +751,7 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="production" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method v="2" />
     </configuration>
     <configuration name="spec: wru" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="wru" />
@@ -663,6 +773,7 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <method v="2" />
     </configuration>
     <configuration name="test: wru" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="wru" />
@@ -687,6 +798,7 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Rake.test: wru" />
@@ -823,58 +935,63 @@
       <workItem from="1539311041584" duration="48000" />
       <workItem from="1539313867644" duration="1052000" />
       <workItem from="1539318236284" duration="1223000" />
+      <workItem from="1539323519180" duration="280000" />
+      <workItem from="1539323834519" duration="4223000" />
+      <workItem from="1539328514790" duration="613000" />
+      <workItem from="1539329250594" duration="685000" />
+      <workItem from="1539330806342" duration="28000" />
+      <workItem from="1539330896289" duration="90000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190380000" />
+    <option name="totallyTimeSpent" value="196299000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="25" width="1869" height="950" extended-state="6" />
-    <editor active="true" />
+    <frame x="471" y="147" width="1394" height="857" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49760765" visible="true" weight="0.31246656" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49760765" visible="true" weight="0.3043478" />
+      <window_info id="Structure" order="1" sideWeight="0.50239235" side_tool="true" weight="0.24043368" />
+      <window_info id="Favorites" order="2" sideWeight="0.50127226" side_tool="true" weight="0.21908316" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3243243" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50127554" side_tool="true" weight="0.31921825" />
-      <window_info anchor="right" id="Database" order="3" weight="0.09256449" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Structure" order="1" sideWeight="0.50239235" side_tool="true" weight="0.24043368" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4987245" visible="true" weight="0.35" />
-      <window_info id="Favorites" order="2" sideWeight="0.50127226" side_tool="true" weight="0.21908316" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4987245" visible="true" weight="0.44598338" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50127554" side_tool="true" weight="0.31921825" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3283582" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3283582" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3243243" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.09256449" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49760765" visible="true" weight="0.31261262" />
       <window_info id="Structure" order="1" sideWeight="0.50239235" side_tool="true" weight="0.24043368" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Favorites" order="2" sideWeight="0.50127226" side_tool="true" weight="0.21908316" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3243243" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Database" order="3" weight="0.09256449" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4987245" visible="true" weight="0.20285088" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50127554" side_tool="true" weight="0.31921825" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3243243" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3283582" />
-      <window_info id="Favorites" order="2" sideWeight="0.50127226" side_tool="true" weight="0.21908316" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.09256449" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -884,15 +1001,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/controllers/schedules_controller_spec.rb" />
-    <entry file="file://$PROJECT_DIR$/spec/models/group_spec.rb" />
-    <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/factories/users.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
@@ -1023,13 +1131,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/javascript/packs/hello_react.jsx" />
     <entry file="file://$PROJECT_DIR$/app/javascript/packs/start_time.jsx" />
     <entry file="file://$PROJECT_DIR$/app/javascript/packs/termination_time.jsx" />
@@ -1047,13 +1148,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/packs-test/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/packs-test/manifest.json" />
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1068,38 +1163,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/javascript/StartTimeSetting/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/schedules.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="15" column="61" lean-forward="true" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/schedules/new.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -1132,13 +1199,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/yarn-error.log" />
-    <entry file="file://$PROJECT_DIR$/app/views/schedules/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/schedules/index_of_group.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -1153,13 +1213,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/javascript/component/start_time.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="4" column="16" selection-start-line="4" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="637">
@@ -1167,31 +1220,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/javascript/component/search.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/search/index.json.builder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/schedules/_each_one.json.builder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="467">
+          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/javascript/component/searchResult.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/javascript/component/searchResultList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/schedules/_each_one.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/schedules/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/javascript/component/start_time.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <element signature="e#228#253#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/javascript/StartTimeSetting/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/search/index.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/javascript/component/search.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/schedules_controller.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/schedules/new.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>

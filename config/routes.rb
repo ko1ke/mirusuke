@@ -4,7 +4,7 @@ Rails.application.routes.draw do
       :registrations => 'users/registrations'
   }
   root 'schedules#index'
-  resources :schedules, only: [:index, :new, :create, :destroy]
+  resources :schedules, only: [:index, :new, :create, :destroy, :show]
   get 'schedules/index_of_group', to: 'schedules#index_of_group', as: 'index_of_group'
 
   get '/search', to: 'search#index'
