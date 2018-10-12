@@ -4,7 +4,6 @@ document.addEventListener("turbolinks:load", function () {
     arr[2] = new Date(arr[2]);
     arr[3] = new Date(arr[3]);
   });
-
   google.charts.load("current", {
     packages: ["timeline"],
     'language': 'ja'
@@ -12,7 +11,7 @@ document.addEventListener("turbolinks:load", function () {
   google.charts.setOnLoadCallback(drawChart);
 
   function drawChart() {
-    var container = document.getElementById('timeline');
+    var container = document.getElementById('timeline-group');
     var chart = new google.visualization.Timeline(container);
     var dataTable = new google.visualization.DataTable();
     dataTable.addColumn({
@@ -34,8 +33,7 @@ document.addEventListener("turbolinks:load", function () {
     dataTable.addRows(gon.arr_for_chart);
     var options = {
       timeline: {
-        singleColor: '#808080',
-        groupByRowLabel: false
+        singleColor: '#808080'
       },
     };
     chart.draw(dataTable, options);
