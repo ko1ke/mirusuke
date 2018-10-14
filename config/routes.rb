@@ -5,9 +5,7 @@ Rails.application.routes.draw do
   }
   root 'schedules#index'
   resources :schedules, only: [:index, :new, :create, :destroy, :show]
-  resources :group_schedules, only: [:index]
-
-  # get 'schedules/index_of_group', to: 'schedules#index_of_group', as: 'index_of_group'
+  resources :group_schedules, only: [:index, :show]
 
   get '/search', to: 'search#index'
 
