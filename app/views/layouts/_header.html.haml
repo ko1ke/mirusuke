@@ -4,6 +4,8 @@
     = link_to 'あなた', root_path, data: {"turbolinks" => false}
   %li
     = link_to 'グループ', group_schedules_path, data: {"turbolinks" => false}
+  %li
+    = link_to '検索', each_schedules_path, data: {"turbolinks" => false}
 
 %ul#dropdown-user.dropdown-content
   %li
@@ -33,6 +35,8 @@
           = link_to 'あなたのスケジュール', root_path, data: {"turbolinks" => false}
         %li
           = link_to 'グループのスケジュール', group_schedules_path, data: {"turbolinks" => false}
+        %li
+          = link_to '検索', each_schedules_path, data: {"turbolinks" => false}
         %li.divider
         %li
           = link_to 'ログアウト', destroy_user_session_path, method: :delete

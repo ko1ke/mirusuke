@@ -1,5 +1,4 @@
-class GroupSchedulesController < ApplicationController
-  before_action :set_user, only: [:show]
+class EachSchedulesController < ApplicationController
 
   def index
     @schedules = Schedule.where(user_id: current_user.group.users)
@@ -17,9 +16,6 @@ class GroupSchedulesController < ApplicationController
                              js_time_str(Date.today.end_of_day) : js_time_str(schedule.termination_time)
       gon.arr_for_chart << [username, type, start_time, termination_time]
     end
-  end
-
-  def show
   end
 
   private

@@ -1,7 +1,7 @@
 class SearchController < ApplicationController
 
   def index
-    @users = User.where("username LIKE ?", "%#{params[:query]}%")
+    @users = current_user.group.users.where("username LIKE ?", "%#{params[:query]}%")
   end
 
 end

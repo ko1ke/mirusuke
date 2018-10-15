@@ -1,7 +1,5 @@
 %h2 #{current_user.group.name}の今日のスケジュール
 
-= react_component("Search")
-
 - if @schedules.exists?
   %table.responsive-table
     %thead
