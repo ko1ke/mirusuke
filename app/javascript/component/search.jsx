@@ -27,7 +27,7 @@ export default class Search extends React.Component {
             <i className='material-icons prefix'>search</i>
             <input name="query" type="text" className='materialize-textarea' id='icon_prefix2'
                       onChange={this.onChange}></input>
-            <label htmlFor='icon_prefix2'>メンバー名を入力...</label>
+            <label htmlFor='icon_prefix2'>メンバー名もしくはメールアドレスを入力...</label>
           </div>
         </form>
         {results.length > 0 || loading ? <SearchResultList results={results} loading={loading}/> : null}
