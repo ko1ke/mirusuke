@@ -30,7 +30,7 @@ let outputLabel = (str) => {
 
 let outputTd = (username, schedules) => {
   let arr = [];
-  arr.push(<tr><th colspan="3"><i className="material-icons icon">tag_faces</i> {username}</th></tr>);
+  arr.push(<tr><th colSpan="3"><i className="material-icons icon">tag_faces</i> {username}</th></tr>);
   arr.push(<tr><td><b>行動</b></td><td><b>概要</b></td><td><b>期間</b></td></tr>);
 
   schedules.forEach(function (schedule) {

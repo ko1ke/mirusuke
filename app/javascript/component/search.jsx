@@ -22,17 +22,15 @@ export default class Search extends React.Component {
     const {loading, results} = this.state;
     return (
       <div className='row'>
-        <form className='col s12 method="GET" action="search"'>
+        <form className='method="GET" action="search"'>
           <div className='input-field'>
             <i className='material-icons prefix'>search</i>
-            <textarea name="query" type="text" className='materialize-textarea' id='icon_prefix2'
-                      onChange={this.onChange}></textarea>
+            <input name="query" type="text" className='materialize-textarea' id='icon_prefix2'
+                      onChange={this.onChange}></input>
             <label htmlFor='icon_prefix2'>メンバー名を入力...</label>
           </div>
-
-          {results.length > 0 || loading ? <SearchResultList results={results} loading={loading}/> : null}
-
         </form>
+        {results.length > 0 || loading ? <SearchResultList results={results} loading={loading}/> : null}
       </div>
     );
   }

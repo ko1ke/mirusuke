@@ -2,11 +2,7 @@ import React from 'react';
 import SearchResult from './searchResult';
 
 export default ({results, loading}) => (
-  <div className="results"
-       style={{
-         visibility: results.length === 0 ? 'hidden' : 'visible'
-       }}
-  >
+  <div className="results">
     {loading ? (
       <div className="spinner-layer spinner-blue">
         <div className="circle-clipper left">

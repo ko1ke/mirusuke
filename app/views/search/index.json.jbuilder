@@ -3,4 +3,3 @@ json.array! @users, partial: 'each_schedules/each_one', as: :each_one do |user|
   json.schedules user.schedules
 end
 
-# json.array! @users, partial: 'each_schedules/each_one', as: :each_one
