@@ -22,6 +22,12 @@ class Schedule < ApplicationRecord
       vacation: 2,
       early_leaving: 3
   }
+  scope :ongoing, -> {where('termination_time > ?', DateTime.now)
+                       .order(:start_time)}
+  scope :today, -> {where('start_time < ? AND termination_time > ?', Date.today.end_of_day, DateTime.now)
+                         .order(:start_time)}
+
+
   validates :action_type, inclusion: action_types.keys
   validate :time_check
 

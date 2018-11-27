@@ -1,9 +1,7 @@
 class EachSchedulesController < ApplicationController
 
   def index
-    @schedules = Schedule.where(user_id: current_user.group.users)
-                     .where('start_time < ? AND termination_time > ?', Date.today.end_of_day, DateTime.now)
-                     .order(:start_time)
+    @schedules = Schedule.where(user_id: current_user.group.users).today
     gon.arr_for_chart = []
 
     @schedules.each do |schedule|

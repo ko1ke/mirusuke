@@ -4,9 +4,7 @@ class SchedulesController < ApplicationController
   # GET /schedules
   # GET /schedules.json
   def index
-    @schedules = Schedule.where(user_id: current_user)
-                     .where('termination_time > ?', DateTime.now)
-                     .order(:start_time)
+    @schedules = Schedule.where(user_id: current_user).ongoing
     gon.arr_for_chart = []
 
     @schedules.each_with_index do |schedule, index|
