@@ -1,19 +1,12 @@
 class SchedulesController < ApplicationController
   before_action :set_schedule, only: [:destroy]
+  include Chart
 
   # GET /schedules
   # GET /schedules.json
   def index
     @schedules = Schedule.where(user_id: current_user).ongoing
-    gon.arr_for_chart = []
-
-    @schedules.each_with_index do |schedule, index|
-      order_num = (index + 1).to_s
-      type = schedule.action_type_i18n
-      start_time = js_time_str(schedule.start_time)
-      termination_time = js_time_str(schedule.termination_time)
-      gon.arr_for_chart << [order_num, type, start_time, termination_time]
-    end
+    gon.arr_for_chart = my_chart(@schedules)
   end
 
   # GET /schedules/new
@@ -60,9 +53,4 @@ class SchedulesController < ApplicationController
   def schedule_params
     params.require(:schedule).permit(:content, :action_type, :start_time, :termination_time)
   end
-
-  def js_time_str(datetime_obj)
-    datetime_obj.to_s.gsub(/\s?\+09:?00/, '').gsub(" ", 'T')
-  end
-
 end
